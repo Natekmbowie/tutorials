@@ -1,12 +1,17 @@
-xml.instruct!
-
-xml.rss("version" => "2.0", "xmlns:dc" => "http://purl.org/dc/elements/1.1/") {
-  xml.channel {
-    xml.title("Test Feed")
-    xml.link("http://nathankmbowie.com/blog.html#mozTocId306153")
-    xml.pubDate(CGI.rfc1123_date(@posts.first.published_at\))\
-    xml.description("A Test Feed")\
-      }
-    end
-  }
-}
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+	<channel>
+	<title>Nate Bowie's Blog</title>
+	<link>http://nathankmbowie.com/blog.html</link>
+	<description>A quick homebrew feed for my blog. Does not include videos/articles I work on, just very occasional content.</description>
+		<item>
+	 <title>Placeholder</title>
+	 <pubDate>Thur, 13 Oct 2022 19:00:00 -0700</pubDate>
+	 <link>https://nathankmbowie.com/blog.html#mozTocId86197</link>
+	 <description>This is just a quick placeholder. I havn't actually copied over any of my old posts or created any new ones yet.</description>
+	
+	
+	
+	</item>
+</channel>
+</rss>
