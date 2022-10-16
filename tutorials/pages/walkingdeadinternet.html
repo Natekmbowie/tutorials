@@ -1,0 +1,616 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Apocalypse Internet</title>
+  
+
+  
+  
+  <style>/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html{-webkit-text-size-adjust:100%;color:#222;font-size:1em;line-height:1.4}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}strong{font-weight:bolder}small{font-size:80%}img{border-style:none;vertical-align:middle}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}.clearfix::after,.clearfix::before{content:"";display:table}.clearfix::after{clear:both}@media print{*,::after,::before{background:#fff!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]::after{content:" (" attr(href) ")"}img{page-break-inside:avoid}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
+/*!
+* Site Partially Based on / Inspired By Bootstrap Grid v4.6.2 (https://getbootstrap.com/). Thank you Developers!
+*/
+html{box-sizing:border-box;-ms-overflow-style:scrollbar;color:#fff;font-size:1rem;font-family:"Open Sans",sans-serif;text-align:center}*,::after,::before{box-sizing:inherit}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col,.col-12,.col-lg-8,.col-md-10,.col-sm-11{position:relative;width:100%;padding-right:15px;padding-left:15px}.col{flex-basis:0;flex-grow:1;max-width:100%}.row-cols-1>*{flex:0 0 100%;max-width:100%}.row-cols-2>*{flex:0 0 50%;max-width:50%}.col-12{flex:0 0 100%;max-width:100%}@media (min-width:576px){.row-cols-sm-2>*{flex:0 0 50%;max-width:50%}.row-cols-sm-3>*{flex:0 0 33.333333%;max-width:33.333333%}.col-sm-11{flex:0 0 91.666667%;max-width:91.666667%}}@media (min-width:768px){.row-cols-md-6>*{flex:0 0 16.666667%;max-width:16.666667%}.col-md-10{flex:0 0 83.333333%;max-width:83.333333%}}@media (min-width:992px){.row-cols-lg-3>*{flex:0 0 33.333333%;max-width:33.333333%}.col-lg-8{flex:0 0 66.666667%;max-width:66.666667%}}.d-flex{display:flex!important}.align-items-center{align-items:center!important}.mx-auto{margin-right:auto!important;margin-left:auto!important}body{background-color:#111}a{color:#069;text-decoration:none}a:active,a:focus,a:hover{text-decoration:underline}h1{font-size:3.2rem;line-height:1.2em}h2{font-size:2rem}h3{color:#555;font-size:1.2rem;margin-bottom:0}.btn-download{color:#fff;display:inline-block;font-size:1.5em;padding:.6em 1em;position:relative;text-decoration:none;text-shadow:0 -1px 0 rgba(0,0,0,.5);vertical-align:middle;border-radius:4px;background-color:#d9750b;background-image:linear-gradient(#f90 10%,#e76a00 100%);box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 1px 3px rgba(0,0,0,.2);border:1px solid #995309}.btn-download:active,.btn-download:focus,.btn-download:hover{text-decoration:none;background-color:#e0811b;background-image:linear-gradient(#f0a100 10%,#f70 100%)}.btn-download:active{background-color:#cf6a00;box-shadow:0 2px 3px 0 rgba(0,0,0,.2) inset}nav{padding-top:50px}.site-logo{color:#fff;float:left;font-size:1.5rem;font-weight:700;text-decoration:none;text-shadow:2px 2px 0 #000;text-transform:uppercase}.star{color:#e08524}footer a{color:#ffa000}footer{font-size:.9rem;padding:2em;margin-bottom:25px;margin-top:25px}.site-nav{float:right;list-style-type:none;margin-top:7px;padding:0}.aside a{margin:5px}.aside img{margin-right:5px}.site-nav a{color:#ffa000;display:block;text-decoration:none;text-transform:uppercase}.site-nav a:active,.site-nav a:focus,.site-nav a:hover{color:#fff}header{margin-bottom:85px;margin-top:85px}header p{color:#ddd;font-size:1.25rem;margin:25px}.changelog{color:#999;display:block;margin-top:10px}.section-features h3{color:#111;margin:8px}.section-features p{padding:0 15px 6px}.section-features .col{margin-bottom:25px;margin-top:15px}.section-features img{margin-bottom:9px}main{background-color:#eee;color:#222}section{padding:35px 0 55px}.aside{background-color:#ccc;padding:25px 0;border-top:1px solid #bbb}.section-who-uses{color:#222;border-top:1px solid #bbb;background-color:#ddd}.section-who-uses .col{margin-bottom:9px;margin-top:9px}.section-who-uses img{text-align:center;max-width:90%;vertical-align:middle;max-height:40px;display:flex;align-items:center;margin-left:auto;margin-right:auto;padding:6px}.inline-block-list li{display:inline-block;margin-left:12px}.inline-block-list li:first-child{margin-left:0}@media only screen and (max-width:768px){html{font-size:calc(.8rem + .5vw)!important}h1{font-size:calc(1.4rem + 1.5vw)!important}h2{font-size:calc(1.2rem + 1vw)!important}.site-logo,.site-nav{float:none!important}.site-nav li{margin:0 .5em}header{margin-top:40px!important}header p{font-size:calc(1rem + .3vw)!important}section{padding:25px 0!important}.inline-block-list li{display:block;margin:0 auto 1.5em}.inline-block-list li:last-child{margin-right:1.5em}}@media only screen and (max-width:575px){.site-logo{float:none!important}header{margin-top:30px}.site-nav{text-align:center;float:none;display:block}.section-who-uses img{padding-left:15px;padding-right:15px}.aside .inline-block-list li{display:block;margin-top:15px;margin-bottom:15px}}</style></head><body>
+<div style="text-align: left;"><a href="../index.html">&lt;---&nbsp;&nbsp;
+return to all articles</a><br>
+</div>
+
+<h1><span style="color: rgb(0, 102, 0);">Creating Internet in the Apocalypse</span><br>
+</h1>
+
+<div style="text-align: left;"><big><a href="https://www.smashwords.com/books/view/1170111" target="_blank"><span style="text-decoration: underline;">Download a PDF/EPUB version from
+Smashwords (free)</span></a><br>
+<a href="https://hive.blog/technology/@natebowie/how-to-build-a-mini-internet-from-scratch-inspired-by-the-walking-dead" target="_blank"><span style="text-decoration: underline;">Read on
+Hive.Blog</span></a><br>
+<span style="font-style: italic;"></span><br>
+<span style="color: rgb(0, 102, 0);">Creating Internet in the Apocalypse</span><span style="color: rgb(0, 102, 0);"></span><br style="color: rgb(0, 102, 0);">
+<span style="color: rgb(0, 102, 0);">-by Nate K.M. Bowie</span><br style="color: rgb(0, 102, 0);">
+<span style="color: rgb(0, 102, 0);">Licensed Creative Commons
+Attribution-Share Alike</span><br style="color: rgb(0, 102, 0);">
+<span style="font-style: italic; color: rgb(0, 102, 0);">Originally
+posted to Hive.Blog on 2/26/</span><span style="color: rgb(0, 102, 0);">2022</span></big><span style="color: rgb(0, 102, 0);">
+</span><br>
+<br>
+I&#8217;ve been watching the Walking Dead lately, and even though I&#8217;m a bit
+behind on the trend (as I often am) I&#8217;ve pretty much caught up to the
+latest portion of it that&#8217;s out as well as most of fear the walking
+dead. Anyway, I thought I might put out a little thought experiment,
+what if you wanted to create your own internet within the apocalypse?
+If so, what are your options and what could you do with it after
+building it. Believe it or not, it would be possible to host a live
+stream on an internet made from scratch in such a scenario (though that
+won&#8217;t work with most of the options laid out), and there would be
+legitimate uses for such a so called &#8216;internet&#8217;.<br>
+<br>
+Before I begin I would just like to point out that this is mostly just
+a thought experiment. Networking is a good chunk of my job, but at the
+end of the day I haven't done things such as set up a GMRS mesh network
+(I&#8217;ll explain that in a bit) so no guarantees that things would work
+exactly as I lay them out. Regardless, time to get started in somewhat
+of a disorganized fashion.<br>
+<br>
+Ultimately, the internet is simply built on connections between
+computers. If I load a file on my phone&#8217;s browser (using HTTP) from a
+server via cellular data my phone uses radio waves to connect to the
+cell tower with the requested information. The information is then sent
+from the cell tower to the cell company&#8217;s servers, probably through a
+high speed cable, where it&#8217;s then processed. If it was a domain that
+was requested it looks up the DNS records to see which IP is associated
+with the domain, then with the IP known (or if the IP was already
+known) the connection is made. Say it&#8217;s a server in a building that has
+internet provided by a cable internet. In that case that connection
+goes from my cell phone company to the cable internet provider, then
+from that cable internet provider to the server in that building via
+the cable internet connection. The file is then sent back in &#8216;packets&#8217;,
+which are just pieces of the file, which are received and assembled
+into the file.<br>
+<br>
+You might be familiar with my writings on IPFS, in which I spoke about
+the differences between IPFS and HTTP. In this case, however, they&#8217;re
+both connections between devices running on IPv4/6 so the above example
+works about the same regardless. Long story short, as long as your
+electronics have the capability of communicating and have been
+configured to do so they&#8217;ll work. And even though the modern global
+internet has a lot of complexity, if you&#8217;re scaling it down it gets a
+lot simpler and is legitimately buildable.<br>
+<br>
+I&#8217;ll start by explaining some of the important &#8216;layers&#8217; that build up
+such a network. I apologize if it&#8217;s too many random aspects to quickly,
+but once I get past explaining all the different parts I&#8217;ll give some
+examples of them being in use so even if I do a bad job at explaining
+the parts individually they&#8217;ll start to make sense once they&#8217;re put
+together.<br>
+<br>
+<big style="font-weight: bold;"><big>Power</big></big><br>
+<span style="font-weight: bold;">Generating Power</span><br>
+So, on to the plans. To start out, if you want to build a network you
+need power. In the Walking Dead they seem to run into Schrodinger power
+reserves: there is simultaneously unlimited power and no power, and
+we&#8217;ll never know which is at play until the writers decide if it will
+make a good plot point.<br>
+<br>
+There are a couple of ways get power even if the grid is down. What you
+intend to build within the network, as well as what supplies you have
+on hand, dictate your options. Right off the bat, we can probably rule
+out sources like geothermal, hydro power, coal, nuclear, most
+windmills, and just about anything else that will require serious
+service by experts. This mostly brings us to generators, solar, and
+manual power.<br>
+<br>
+Generators are the simplest option, as long as there&#8217;s fuel you can run
+them and have the exact amount of power required. There&#8217;s a few caveats
+to this, however, the most obvious one being the fact you need fuel.
+Cheap home generators can run off gasoline or propane, and there are
+diesel generators as well, but obviously there&#8217;s a limited supply of
+fuel. Gasoline goes bad, though fuel stabilizer is cheap, but unless
+you&#8217;re growing crops for fuel ethanol or oil for a diesel generator you
+can&#8217;t get more fuel once it&#8217;s gone (and good luck making propane).
+Beyond that, even if you were using ethanol or plant based oil for
+gasoline or diesel generators respectively it&#8217;s my understanding that
+engines wear out pretty fast if you&#8217;re using those.<br>
+<br>
+Furthermore, a lot of generators won&#8217;t be safe to use with electronics
+out of the box, at least not the kind you would pick up at a hardware
+store, so you&#8217;d have to take that into account as well.<br>
+<br>
+Your next option, which seems obvious, is solar panels. They come in
+all shapes and sizes, from huge with high outputs to ones small enough
+to fit in a backpack, and are a go too for all sorts of people who want
+or need power outside of the electrical grid. The problem comes in
+though when you need power and the sun is not out. While solar panels
+are probably the best option here, depending on your setup you might
+need a beefy power storage system.<br>
+<br>
+Last in terms of power, there are some options for you to generate
+power manually. This usually includes thinks like wind up radios that
+will charge via USB or chargers that will generate power while you&#8217;re
+riding your bike. They certainly won&#8217;t generate enough power for most
+things, but could probably charge a mobile device, radio, or
+flashlight, so it&#8217;s worth mentioning.<br>
+<br>
+<span style="font-weight: bold;">Storing/Transporting Power</span><br>
+Once you have power though, there will be two limitations that you&#8217;d
+have to contend with. First, power will pretty much have to be used
+where you generate it. You can run devices or charge batteries, but
+otherwise you&#8217;re limited to about how far you can run an electrical
+cord from your source of power.<br>
+<br>
+Speaking of charging batteries, that&#8217;s another thing you might run in
+to. If you&#8217;re using something like solar then once the sun goes down
+you&#8217;re limited solely to what you have in storage. Batteries like car
+batteries are not meant to have a constant pull on them, and will
+probably fail pretty quick if you try to run a bunch of devices off
+them day in and day out. Something like a deep cycle lead acid battery
+intended for boat engines might work decently, but if you were able to
+get your hands on a number lithium-ion batteries that would be ideal.
+There are also battery systems often known as solar generators that
+come pre-built for power storage.<br>
+<br>
+Additionally, many devices from phones and laptops to portable radios
+have built in rechargeable batteries, and some are power efficient
+enough to be recharged with a USB power bank. Depending on the scale of
+what you wanted to build, they might be your best bet for reliability.<br>
+<br>
+<big style="font-weight: bold;"><big>Infrastructure</big></big><br>
+Okay, so you have power, now you need devices to be able to
+communicate. How ambitious you are depends on what kind of lines
+(metaphorical or literal) that you need to lay out. Just keep in mind
+some types of hardware might be incompatible with some of these options.<br>
+<br>
+<span style="font-weight: bold;">Cables</span><br>
+Speaking of metaphorical and literal lines, your first option is to
+literally lay out cables. Stepping outside and laying out or burying
+500 feet of weatherproof Ethernet cable is actually not actually that
+hard. Cables are also a pretty efficient means of getting data from one
+place to another, but unless you&#8217;ve got the equipment and manpower to
+lay cables on a massive scale there&#8217;s a limit on the amount of distance
+you can cover with them.<br>
+<br>
+<span style="font-weight: bold;">WiFi &amp; LANs</span> (I'll use WiFi
+and LAN interchangeably here)<br>
+The home WiFi network is pretty standard now: even if it&#8217;s not
+connected to the modern internet it&#8217;s still very functional as a LAN,
+and if you&#8217;re building a mini makeshift internet then it can provide
+access to that as well. Furthermore, you can get the benefit that most
+modern devices can connect to it without any hassle, many modern
+devices can create their own network, and something like a router or
+laptop can create a network that can bridge a connection from something
+like Ethernet to mobile devices by creating a WiFi network. You can
+also find routers capable of projecting WiFi five to ten thousand
+square feet, with extenders that can increase that indefinitely, so you
+can provide a pretty big area with connectivity.<br>
+<br>
+WiFi and LANs also have the benefit of getting data to a large number
+of devices easily. Sure, cables are a really effective means of getting
+a high speed and low maintenance connection between a couple of
+important devices, but if you start building out a huge network with
+only cables then you run into issues where you might need to start
+including switches (which require power themselves) and a bunch of
+complex configuration issues. Even if you rely on cables a lot for
+building up the backbone of such a hypothetical network in the
+apocalypse you&#8217;d still be best left of using wireless communication at
+the edges of that network if you plan on having plenty of people
+connect to the network to utilize it with their own devices.<br>
+<br>
+<span style="font-weight: bold;">Long Range Radio</span><br>
+Beyond WiFi, which uses radio signals at fairly short ranges, you can
+actually get data transferred pretty far with radio waves. Keep in mind
+that your cell phone is pretty much a handheld radio with a computer
+built in, and satellite&#8217;s are radios with big reflective dishes to send
+and receive data in a precise manner.<br>
+<br>
+One option for longer distance radio is to use a device that functions
+similar to a proxyham device. If you were unaware, a proxyham was a
+device that was originally developed to access WiFi at relatively long
+ranges (supposedly up to nine miles under ideal conditions). While the
+proxyham was never actually released to the market, it&#8217;s possible to
+build a makeshift device with a USB WiFi receiver, a flexible USB
+cable, and a satellite dish or even a metal colander.<br>
+<br>
+Next, there&#8217;s the ability to use analog radio systems to send data.
+Products like the Gotenna Mesh allow you to create a mesh network using
+GMRS band radio signals, allowing the sharing of data/communications.
+Similarly, some Ham radio operators use APRS, which allows packets of
+data to be sent and received via radio signals. There are also FRS/GMRS
+radios which will allow you to pair them with your phone and send and
+receive what amounts to texts between users over reasonable distances.<br>
+<br>
+<span style="font-style: italic; font-weight: bold;">Please Note:</span><br style="font-style: italic;">
+<span style="font-style: italic;">Now, when it comes to radio signals
+in real life as it stands now there are certain limitations to what
+you&#8217;re allowed to send, how you do it, and what licenses you&#8217;d need;
+though I guess if this is a thought experiment about networks in the
+zombie apocalypse then you can get pretty damn creative using radio
+signals to transmit data.</span><br>
+<br>
+<span style="font-weight: bold;">Manual Transmission</span><br>
+Despite all these complicated options it&#8217;s still possible to deal with
+distance by simply walking or verbally transmitting data with a radio.
+Obviously there&#8217;s a limit to what you can verbally transmit over a
+radio, but it doesn&#8217;t require much in terms of setup. You can also
+simply bring a device from one place to another and connect to an FTP
+server or transmit Briar messages that you traveled to bring (more on
+that in the software section), or just bring data on a thumb drive/SD
+card/hard drive from one place to another.<br>
+<br>
+<big style="font-weight: bold;"><big>Hardware</big></big><br>
+Once you have power and a means for devices to communicate, the next
+logical step is address the devices that make up this hypothetical
+network. You have a lot of options, and of course a wide variety of
+devices can connect to one another and work in tandem, but I&#8217;m mainly
+going to divide this up into three groups of devices.<br>
+<br>
+<span style="font-weight: bold;">Servers, Desktops, and Laptops</span><br>
+Okay, so you might be wondering why I lumped budget laptops and state
+of the art servers in the mix, but a lot of this comes down the
+software they are capable of running and not their specs. Running a
+full blown computer of some form will allow for much greater processing
+power, and also allow you to do more advanced things such as
+configuring a DNS setup to use real domains in this hypothetical
+makeshift setup. If you were going to store a lot of data, run anything
+complex, or have a very complex network with a lot of connectivity than
+a computer of some sort would be the way to go.<br>
+<br>
+Breaking things down a bit more, dedicated servers (and many powerful
+desktops) have much more power than laptops and other lower end
+devices. If you were going to run things like video streaming, or
+wanted to have a complex library of data, or had a large sprawling
+network then something with a bit more power would be vital. This comes
+at the cost however of requiring increased power and possibly increased
+complexity. Not to mention you have to find and prepare such a device.<br>
+<br>
+Laptops on the other hand require much less power and usually have a
+battery system built into them. They also have the bonus of usually
+being able to create their own WiFi network and utilize Bluetooth,
+while still having the ability to run software like Windows Servers and
+Linux distros; and have ports such as USB and Ethernet. While they lack
+in computing power, if you&#8217;re building a network like this you might
+not need a ton of computing power unless you were really building it
+big, so they&#8217;d probably suffice in a lot of circumstances. They are
+also really common, and you can get by a password super easily &#8211;
+unencrypted devices can be bypassed with ease, and even if the hard
+drive is encrypted you can still wipe it and use the laptop itself.<br>
+<br>
+<span style="font-weight: bold;">Mobile Devices &amp; Micro Devices</span><br>
+Since this is a theoretical network for the apocalypse, however, we can
+still go a lot smaller than laptops, and the first of that is phones.
+Phones are pretty much mini computers these days, and can easily run an
+FTP server, create a LAN network, and host other low power processes.
+They are also very power efficient, and would allow you to pretty much
+run a network from a $20 solar charger. They are of course unable to
+accept most wired connections and physical storage, however, and lack
+the ability to run certain software (so don&#8217;t expect to run DNS from a
+phone).<br>
+<br>
+Phones and tablets would make a great end point. For example, you could
+have something like a raspberry pi receiving packets from a radio, then
+connecting to a LAN created by a phone, and then anybody who connected
+a device to that network could be patched in to the larger network on
+the other side of that radio. On the smaller side of things, a phone&#8217;s
+LAN could be used as the only device to device communication, with a
+phone being located in one main building and every time somebody wished
+to share a file or leave a digital message they would go to the
+building and connect to the network. Last, Android would probably beat
+Apple simply because it&#8217;s easy to side load on Android, but if the
+Apple store goes down then you&#8217;re stuck with whatever you already
+installed. That said, it&#8217;s not like Apple would be useless since you
+could still try to jailbreak it or simply use already installed
+software.<br>
+<br>
+The last component I thought I would cover is micro devices like a
+raspberry pi. While a device like that is probably less powerful then a
+mobile device, it&#8217;s also geared more towards networking so it&#8217;s sort of
+equal in it&#8217;s ability to perform small tasks. A raspberry pi could be
+connected to the network through a LAN or wired connection and host
+lightweight content or perform tasks such interpreting radio
+transmissions to allow devices over long ranges to communicate.<br>
+<br>
+<span style="font-weight: bold;">End User Devices</span><br>
+Last, I might as well touch on end user devices as well. An end user
+device here is simply any device serving people instead of the network.
+You might have a number of devices hosting content, and a number more
+making sure communication between the devices hosting content works,
+but an end user device is something that a person uses for themselves.
+This could be a computer that is plugged into the network or connects
+to a LAN, or a mobile devices that connects to a LAN, but it&#8217;s so a
+person can perform a function such as communication or file sharing
+(probably the same things you use your devices for now). These devices
+don&#8217;t matter too much as it&#8217;s up to the device&#8217;s owner and not the
+network to keep them powered and running smoothly, and the also have
+the benefit of not causing disruptions when they&#8217;re turned off or
+disconnected.<br>
+<br>
+That said, phones and tablets connected via LAN is the most likely end
+user device to be found on a network like this. Devices that make up
+the network itself may need more capabilities than a mobile device, but
+in order to do most functions like chat or share files a mobile device
+is ideal given it&#8217;s built in battery, portability, and minimal power
+requirements.<br>
+<br>
+<big style="font-weight: bold;"><big>Software</big></big><br>
+Power, connections, and hardware make a network possible, but it&#8217;s the
+software that gives the functionality to it. Now, given this is all a
+hypothetical thought experiment, I could just say that you&#8217;d need to
+program everything from scratch yourself, but realistically getting
+modern existing software is the way to go here. Obviously lots of
+modern software like Google Chat is useless if Google is down; and
+protocols like IPFS, while great, given their hash identification
+system and the fact that this network would likely be too small and
+inconsistent to allow decentralized tools like that to shine. Instead,
+there&#8217;s specific tools however that will fill those roles nicely, many
+of which you might have found in a home network a decade back. Also,
+because this thought experiment takes place in the apocalypse, security
+is less of a concern so no worries about outdated or somewhat insecure
+systems.<br>
+<br>
+First off, you&#8217;ll need operating systems and general tools like that.
+Windows and Linux installers are certainly crucial, a portable Linux
+distro like Puppy Linux would be ideal for bypassing any password
+protected computers you come across, and software to provide DNS or
+packets via Ham/GMRS radio and plenty of other networking software
+would be crucial if you intended to use them.<br>
+<br>
+Additionally, you&#8217;d need generic utility software. Obviously if it
+needs to check for a subscription then the software is useless, since
+even though you could change where the domain points via DNS
+configuration you would still have to spoof a certificate to sign the
+software so things like MS Office and Adobe software is out of the
+question. Instead, document editors, photo editors, note taking apps,
+calculators, calendars, file compressors, ebook readers, music/video
+players, audio recorders, html document editors, and plenty more would
+be useful to have options for on multiple operating systems for
+computers and mobile. Also, while in an apocalypse GPS would be useless
+within a couple weeks, offline GPS would be useful at first and mapping
+tools like OsmAnd would still be useful for understanding the terrain
+and making markers even if GPS no longer works.<br>
+<br>
+Next, communication tools would be extremely useful. Most messengers
+are useless without a central host (Apple Messenger, Google Chat,
+Signal, Telegram, WhatsApp, etc), but there are still a couple of
+options. Email could be configured via DNS, but email would probably
+bit a bit clunky to configure and unnecessary for a small network like
+this. Federated messengers like Matrix or XAMPP would be a bit simpler
+to use, and there are also messengers like fire chat which work off
+Bluetooth only, though I have not used fire chat personally and
+federated messengers would still be a bit finicky. That said, in my
+opinion, Briar should be the go to of any apocalyptic network engineer.
+Briar operates in mesh network style, providing all the data one device
+has to another whenever they can reach each other, meaning it would
+work perfectly in a situation when devices cannot always reliably
+communicate with each other. It is also completely decentralized (not
+relying on any centralization or federation), it can communicate though
+the internet, Bluetooth, or LAN, and it can also host group chats,
+private chats, and discussion boards.<br>
+<br>
+Next, you would definitely need a way to share files. These files could
+be videos, photos, maps, ebooks, notes, lists, or whatever else, but
+the ability to replicate files and share them with others would give
+anybody an edge in the apocalypse. Both an FTP server, which could be
+run of nearly any device, or a Samba server on a Linux computer could
+fill this role nearly perfectly. Additionally, there are also plenty of
+programs and apps that would allow somebody to automatically sync files
+between devices.<br>
+<br>
+Continuing on, depending on your setup if you wanted to host web sites
+on this hypothetical network you would probably want to look into web
+scripts. Web scripts allow you to create a complex website with no
+coding, such as WordPress blogs or discussion boards. That said,
+complex websites take up more resources, and a discussion board you can
+load with a domain name in your browser might seem fancy but something
+like Briar would work almost as good at a tiny fraction of the power
+cost and setup complexity.<br>
+<br>
+Ending my examples, you may also need specific software for any tools
+you are using. Want to create a GotennaMesh network? Then you&#8217;d
+probably need to get software from GotennaMesh. Same goes for Ham radio
+packets, or phone jailbreaking software, or equipment repair software,
+or anything else specific to your setup. Beyond that, there&#8217;s probably
+a million other examples I could give, but I&#8217;m lazy and these items are
+what came to mind.<br>
+<br>
+<big><big><span style="font-weight: bold;">Uptime</span></big></big><br>
+Once you have a network setup the next question is how long and often
+to keep it online. The simplest solution would just to leave it on
+24/7, but that may or may not be the best solution. If you have the
+power then certainly having communication capabilities at all hours
+would be ideal, but when budgeting power there might not be enough for
+it to be worth it. It may be found that leaving it online 8-12 hours a
+day can allow everybody to use it when they need it, but also cuts back
+on power usage so you know you won&#8217;t run out. Or, maybe have multiple
+different settlements each with their local networks all bridged
+together through radio communications, so you leave some or all the
+local networks online 24/7 but only run the radio communications for a
+few hours each day to cut back on power.<br>
+<br>
+But again, given this is a hypothetical thought experiment, there&#8217;s no
+real answer to this. A phone might take a week to burn through the same
+power as server does in an hour, and you may have a ton of power to
+burn or you may be so limited you can&#8217;t even keep that phone on 24/7.<br>
+<br>
+<big style="font-weight: bold;"><big>Use Cases</big></big><br>
+The first, and biggest by far, reason why networking like this would be
+useful in an apocalypse would be instant communication across long
+distances. Most of this communication would ideally be done in text
+form, making it silent if you need to alert people for strategic
+purposes without making noise, it is super small in the amount of data
+it takes up, and can easily be read and stored so you&#8217;re not limited
+solely to what somebody is saying in real time. This can be broken into
+two parts:<br>
+<br>
+First, as the old saying goes, knowledge is power. If you can send a
+message to somebody miles away about something time sensitive that can
+be extremely valuable. From getting help to somebody who&#8217;s injured, to
+warning of an attack by people, zombies, or whatever other apocalyptic
+threat that would fit this thought experiment &#8211; in addition to real
+time collaboration while responding to said issues.<br>
+<br>
+The second, a bit more mundane, is the administrative side of
+surviving. Being able to share files on a portion of the setups
+discussed it would make it possible to share information on anything
+from people, to resources, to collected data. In the apocalypse that
+accompanies this thought experiment it would probably be extremely
+useful to share things like spreadsheets of resources that are needed
+and that are in surplus, information on people and who is good or bad,
+weather, and any other similar form of data.<br>
+<br>
+But file sharing isn&#8217;t just limited to spread sheets. Ebooks, guides,
+videos, audio books, software, photos, and just about any other file
+could be shared through a number of different setups discussed. All
+these different files could be huge in providing information to people,
+and as said before, knowledge is power. It could also be used to share
+entertainment, which would probably be a much needed moral boost for
+any apocalypse survivors.<br>
+<br>
+Last, a network like this could preserve data. Everything from game of
+thrones to scientific research is, to different extents, an
+achievement. While sticking copies of data on a thumb drive might be
+destroyed by bitrot within a few years to a decade, as long as a
+network like this was up and running it could be preserved for a lot
+longer. Now of course if factories are going to stop producing
+electronics forever then eventually the data would be lost anyway, but
+a network like this could probably be kept running for a good 20-30
+years before the worlds mono-crystal solar panels start dying out.<br>
+<br>
+<big><big><span style="font-weight: bold;">Examples</span></big></big><br>
+Okay, so finally here all that explaining can pay off and we can make
+some examples example. Lets say we have one big town, a hamlet near
+that big town, three small towns, an isolated building, and a small
+house. There is networking hardware specific to each location, each
+location has a local WiFi/LAN network, and they transport data from the
+local network to other local networks using radio waves for long
+distance networking. Also, let&#8217;s assume everybody is using the Briar
+app as their primary means of communication.<br>
+<br>
+<span style="font-weight: bold;">Big Town</span><br>
+Starting with the big town, lets say they&#8217;ve got lots of people and a
+fair bit of power. Their local networking hardware includes a desktop
+PC, a router, a small server, and a radio that all stay on 24/7. The
+radio is connected to the desktop PC, and the desktop PC and small
+server are connected to the router which is very powerful. The PC has
+an FTP server on it, allowing anybody to upload or download files from
+it, and it also allows handles packets from the radio. The server has
+DNS setup on it and also hosts a couple of really simple websites.<br>
+<br>
+The router provides a WiFi/LAN network that covered most of the town.
+Given the PC and small server are connected to it people can access all
+content on those devices (e.g. FTP file sharing &amp; websites), are
+capable of peer to peer data so they can communicate through Briar, and
+thanks to the radio anybody on the big town network can access other
+networks if they also have a radio set up to send and receive internet
+packets.<br>
+<br>
+<span style="font-weight: bold;">Hamlet</span><br>
+The hamlet is just outside the big town, so they have a pretty unique
+setup. They have a proxy ham type setup that is capable of connecting
+to the big town&#8217;s LAN network from a half a mile away. The proxy ham
+like setup then creates it&#8217;s own WiFi network, but connecting to the
+network in the hamlet is as if you connected to the network in the big
+town. Despite the fact the hamlet doesn&#8217;t have a radio setup or any
+local devices providing them with content, since the hamlet&#8217;s wireless
+network is just an extension of the big town&#8217;s network they can piggy
+back off big town&#8217;s hardware and use the servers and radio setup just
+as if they were close by.<br>
+<br>
+<span style="font-weight: bold;">Town 1</span><br>
+Town one is a fair bit smaller so they have a little less in terms of
+hardware. They have a radio, a laptop with an FTP server on it that
+also handles radio packets, and a WiFi router connected to the laptop
+that covers the center of the town with a LAN. People connected to the
+LAN can share files through the FTP server and communicate with others
+on the network through Briar. The radio antenna allows them to connect
+to other town&#8217;s servers such as big town and communicate with other
+LANs that also have a radio antenna, though the connection is fairly
+slow over radio when compared to a LAN network. Town one lacks as much
+power, however, so they only leave the laptop, router, and radio on for
+12 hours a day, then turn it off to preserve power unless they need it
+on for one reason or another.<br>
+<br>
+<span style="font-weight: bold;">Town 2</span><br>
+Town two also lacks large amounts of power, but they go about this in a
+different way. Their network consists of a radio, a cell phone, and a
+raspberry pi that is left on at all hours. The raspberry pi is
+connected to the radio and allows connection to other systems linked up
+through the radio. The raspberry pi is connected to a LAN created by
+the cell phone, and the cell phone also can run tools such as an FTP
+server; though the trade off for such lower power requirements is the
+limited space and computing abilities of the raspberry pi and cell
+phone. Nevertheless, devices can still be connected to the LAN created
+by the phone and operate it like any of the other LANs on the network.<br>
+<br>
+<span style="font-weight: bold;">Town 3</span><br>
+Town three is limited in their power and the smallest of the towns, so
+all town three has is a laptop that is connected to the radio. Though
+the laptop could create a network, instead it is usually off, and the
+laptop and radio are only turned on when they are used with the laptop
+being the only main gateway into the other LANs that make up the
+network. When turned on Briar messages and the like can come in, and it
+is capable of accessing data on LANs thanks to the radio, but then it
+can be turned off to limit the power consumption and complexity of the
+local town&#8217;s hardware.<br>
+<br>
+<span style="font-weight: bold;">Isolated Building</span><br>
+Lets say that this isolated building is an apartment building. This
+building, thanks to it&#8217;s concrete walls and the hills between it and
+the other towns cause it to be unfeasible to use radio to communicate
+with other towns. While a repeater might be able to be set up on a
+hilltop and the roof of the building, it&#8217;s not within the means of the
+people there.<br>
+<br>
+In this case, they have a local laptop that hosts a Samba file server,
+which operates similar to an FTP server. This laptop is situated on one
+side of the building and is also creating a LAN network. On the edge of
+LAN range there is a WiFi extender that provides a boost to the LAN&#8217;s
+reach and covers a good part of the building. With file sharing on the
+laptop, and messaging through Briar, the people in the building can
+communicate with each other. Additionally, wherever somebody travels
+from a town with a radio to the building that is also using Briar they
+can connect to the network in this building and automatically
+distribute messages to this network, as well as upload whatever files
+they wish to the Samba server.<br>
+<br>
+<br>
+<span style="font-weight: bold;">Random House</span><br>
+Last, we can cover the random house. Lets say this random house is home
+to a family who farms plants and livestock, as well as scavenges. The
+only hardware they have there is a phone, but whenever somebody drops
+by from another town they can connect phones through Bluetooth or a LAN
+temporarily created by the phones, the have all messages coming from
+and going to the larger networks exchanged. They can also exchange
+files and the like whenever wanted. This would allow them to organize
+things like trade that utilizes the larger set of individual networks
+without having any hardware setup at that random house except a phone.
+Further, since they need very little power they can suffice with a
+super tiny solar panel or with manual power generation options like a
+hand crank radio with USB output.<br>
+<br>
+<big style="font-weight: bold;"><big>Closing</big></big><br>
+Well that&#8217;s about that. I hope you found this interesting, it was
+really intended as more of an interesting learning adjacent piece than
+anything resembling a tutorial. Stay safe, have a good one, and if
+you&#8217;re really interested in any of the concepts here you can always
+give them a try in the real world.<br>
+<br>
+<span style="color: rgb(0, 102, 0);">All content in /tutorials is
+licensed </span><span style="font-style: italic; color: rgb(0, 102, 0);">Creative Commons
+Attribution-Share Alike</span><span style="color: rgb(0, 102, 0);">
+unless otherwise specified. Feel free to share it around and re-use it,
+but please give me credit if you do so (and would love if you sent me a
+message or something). You can also<span style="color: rgb(0, 0, 153);">
+</span></span><a style="color: rgb(0, 0, 153); text-decoration: underline;" href="https://nathankmbowie.com/tips.html">send me a tip</a><span style="color: rgb(0, 102, 0);"> if you found this helpful, but no
+pressure - this is a hobby.</span><br>
+<br>
+Contact Me:<br>
+
+Mastodon @natebowie@mastodon.social<br>
+
+Twitter @NathanBowie6<br>
+</div>
+
+<br>
+
+<br>
+
+</body></html>
