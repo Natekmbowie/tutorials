@@ -1,14 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 	<channel>
 	<title>Nate Bowie's Blog</title>
 	<link>http://nathankmbowie.com/blog.html</link>
 	<description>A quick homebrew feed for my blog. Does not include videos/articles I work on, just very occasional content.</description>
 		<item>
-	 <title>Placeholder</title>
-	 <pubDate>Thur, 13 Oct 2022 19:00:00 -0700</pubDate>
-	 <link>https://nathankmbowie.com/blog.html#mozTocId86197</link>
-	 <description>This is just a quick placeholder. I havn't actually copied over any of my old posts or created any new ones yet.</description>
+	 <title>A New Site</title>
+	 <pubDate>Sun, 16 Oct 2022 19:00:00 -0400</pubDate>
+	 <link>https://nathankmbowie.com/blog.html#A_New_Site</link>
+	 <description>After about a year hosting on IPFS I decided to revamp my site and transition where I host my site (though I'll still mirror on IPFS). I also updated my blog for the first time in over a year.</description>
+	
+	
+	
+	</item>
+	<item>
+	 <title>BitRot PSA: A YT Short</title>
+	 <pubDate>Tue, 26 Jan 2021 19:00:00 -0400</pubDate>
+	 <link>https://nathankmbowie.com/blog.html#Bitrot_PSA</link>
+	 <description>My second video, a YouTube short about the risks of BitRot.</description>
+	
+	
+	
+	</item>
+	<item>
+	 <title>I started a YouTube Channel</title>
+	 <pubDate>Mon, 25 Jan 2021 19:00:00 -0400</pubDate>
+	 <link>https://nathankmbowie.com/blog.html#I_Started_a_YouTube_Channel</link>
+	 <description>I created a YouTube channel and my first video.</description>
+	
+	
+	
+	</item>
+	<item>
+	 <title>Free Promo + Leaving KU</title>
+	 <pubDate>Tue, 8 Sept 2020 19:00:00 -0400</pubDate>
+	 <link>https://nathankmbowie.com/blog.html#Free_Promo_plus_Leaving_KU</link>
+	 <description>I ran a free promo to for my book, and ended exclusivity on Kindle Unlimited in favor of broader distrabution.</description>
+	
+	
+	
+	</item>
+	<item>
+	 <title>Well, I'm Live</title>
+	 <pubDate>Sat, 4 April 2020 19:00:00 -0400</pubDate>
+	 <link>https://nathankmbowie.com/blog.html#Well_Im_Live</link>
+	 <description>Lauch date celebration of my book.</description>
+	
+	
+	
+	</item>
+	<item>
+	 <title>Official Release</title>
+	 <pubDate>Tue, 24 March 2020 19:00:00 -0400</pubDate>
+	 <link>https://nathankmbowie.com/blog.html#Official_Release</link>
+	 <description>An official time and date for my book's release, as well as preorders.</description>
+	
+	
+	
+	</item>
+	<item>
+	 <title>Announcing My Book</title>
+	 <pubDate>Sun, 22 March 2020 19:00:00 -0400</pubDate>
+	 <link>https://nathankmbowie.com/blog.html#Announcing_My_Book</link>
+	 <description>Announcing the title, description, and release date for the book I was working on.</description>
+	
+	
+	
+	</item>
+	<item>
+	 <title>Hello World</title>
+	 <pubDate>Mon, 9 March 2020 19:00:00 -0400</pubDate>
+	 <link>https://nathankmbowie.com/blog.html#Hello_World</link>
+	 <description>My very first blog post.</description>
 	
 	
 	
