@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Purchase with Privacy</title>
+
+  
+  
+  <style>/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html{-webkit-text-size-adjust:100%;color:#222;font-size:1em;line-height:1.4}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}strong{font-weight:bolder}small{font-size:80%}img{border-style:none;vertical-align:middle}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}.clearfix::after,.clearfix::before{content:"";display:table}.clearfix::after{clear:both}@media print{*,::after,::before{background:#fff!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]::after{content:" (" attr(href) ")"}img{page-break-inside:avoid}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
+/*!
+* Site Partially Based on / Inspired By Bootstrap Grid v4.6.2 (https://getbootstrap.com/). Thank you Developers!
+*/
+html{box-sizing:border-box;-ms-overflow-style:scrollbar;color:#fff;font-size:1rem;font-family:"Open Sans",sans-serif;text-align:center}*,::after,::before{box-sizing:inherit}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col,.col-12,.col-lg-8,.col-md-10,.col-sm-11{position:relative;width:100%;padding-right:15px;padding-left:15px}.col{flex-basis:0;flex-grow:1;max-width:100%}.row-cols-1>*{flex:0 0 100%;max-width:100%}.row-cols-2>*{flex:0 0 50%;max-width:50%}.col-12{flex:0 0 100%;max-width:100%}@media (min-width:576px){.row-cols-sm-2>*{flex:0 0 50%;max-width:50%}.row-cols-sm-3>*{flex:0 0 33.333333%;max-width:33.333333%}.col-sm-11{flex:0 0 91.666667%;max-width:91.666667%}}@media (min-width:768px){.row-cols-md-6>*{flex:0 0 16.666667%;max-width:16.666667%}.col-md-10{flex:0 0 83.333333%;max-width:83.333333%}}@media (min-width:992px){.row-cols-lg-3>*{flex:0 0 33.333333%;max-width:33.333333%}.col-lg-8{flex:0 0 66.666667%;max-width:66.666667%}}.d-flex{display:flex!important}.align-items-center{align-items:center!important}.mx-auto{margin-right:auto!important;margin-left:auto!important}body{background-color:#111}a{color:#069;text-decoration:none}a:active,a:focus,a:hover{text-decoration:underline}h1{font-size:3.2rem;line-height:1.2em}h2{font-size:2rem}h3{color:#555;font-size:1.2rem;margin-bottom:0}.btn-download{color:#fff;display:inline-block;font-size:1.5em;padding:.6em 1em;position:relative;text-decoration:none;text-shadow:0 -1px 0 rgba(0,0,0,.5);vertical-align:middle;border-radius:4px;background-color:#d9750b;background-image:linear-gradient(#f90 10%,#e76a00 100%);box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 1px 3px rgba(0,0,0,.2);border:1px solid #995309}.btn-download:active,.btn-download:focus,.btn-download:hover{text-decoration:none;background-color:#e0811b;background-image:linear-gradient(#f0a100 10%,#f70 100%)}.btn-download:active{background-color:#cf6a00;box-shadow:0 2px 3px 0 rgba(0,0,0,.2) inset}nav{padding-top:50px}.site-logo{color:#fff;float:left;font-size:1.5rem;font-weight:700;text-decoration:none;text-shadow:2px 2px 0 #000;text-transform:uppercase}.star{color:#e08524}footer a{color:#ffa000}footer{font-size:.9rem;padding:2em;margin-bottom:25px;margin-top:25px}.site-nav{float:right;list-style-type:none;margin-top:7px;padding:0}.aside a{margin:5px}.aside img{margin-right:5px}.site-nav a{color:#ffa000;display:block;text-decoration:none;text-transform:uppercase}.site-nav a:active,.site-nav a:focus,.site-nav a:hover{color:#fff}header{margin-bottom:85px;margin-top:85px}header p{color:#ddd;font-size:1.25rem;margin:25px}.changelog{color:#999;display:block;margin-top:10px}.section-features h3{color:#111;margin:8px}.section-features p{padding:0 15px 6px}.section-features .col{margin-bottom:25px;margin-top:15px}.section-features img{margin-bottom:9px}main{background-color:#eee;color:#222}section{padding:35px 0 55px}.aside{background-color:#ccc;padding:25px 0;border-top:1px solid #bbb}.section-who-uses{color:#222;border-top:1px solid #bbb;background-color:#ddd}.section-who-uses .col{margin-bottom:9px;margin-top:9px}.section-who-uses img{text-align:center;max-width:90%;vertical-align:middle;max-height:40px;display:flex;align-items:center;margin-left:auto;margin-right:auto;padding:6px}.inline-block-list li{display:inline-block;margin-left:12px}.inline-block-list li:first-child{margin-left:0}@media only screen and (max-width:768px){html{font-size:calc(.8rem + .5vw)!important}h1{font-size:calc(1.4rem + 1.5vw)!important}h2{font-size:calc(1.2rem + 1vw)!important}.site-logo,.site-nav{float:none!important}.site-nav li{margin:0 .5em}header{margin-top:40px!important}header p{font-size:calc(1rem + .3vw)!important}section{padding:25px 0!important}.inline-block-list li{display:block;margin:0 auto 1.5em}.inline-block-list li:last-child{margin-right:1.5em}}@media only screen and (max-width:575px){.site-logo{float:none!important}header{margin-top:30px}.site-nav{text-align:center;float:none;display:block}.section-who-uses img{padding-left:15px;padding-right:15px}.aside .inline-block-list li{display:block;margin-top:15px;margin-bottom:15px}}</style>
+</head><body>
+<div style="text-align: left;"><a href="../index.html">&lt;---&nbsp;&nbsp;
+return to all articles</a><br>
+</div>
+
+<h1><span style="color: rgb(0, 102, 0);">Purchase with Privacy</span><br>
+</h1>
+
+<div style="text-align: left;"><a style="text-decoration: underline;" href="https://www.smashwords.com/books/view/1103705" target="_blank">Download
+a PDF/EPUB version from
+Smashwords (free)</a><br style="text-decoration: underline;">
+<a style="text-decoration: underline;" target="_blank" href="https://hive.blog/privacy/@natebowie/purchasing-physical-items-online-with-increased-privacy-or-near-anonymity">Read on Hive.Blog</a><br>
+<br>
+<span style="font-weight: bold;">Purchasing physical items online with
+increased privacy or near anonymity.</span><br style="font-weight: bold;">
+<span style="font-style: italic;">A quick virtual pamphlet to explain
+the ways in which you can increase your privacy or attempt to be
+entirely anonymous while purchasing anything online.</span> <span style="font-style: italic;">Originally posted 9/19/2021 on Hive.Blog,
+R/WallstreetSilver, and Smashwords</span>.<br>
+<br>
+So, you wish to purchase something online while protecting your
+personal privacy? In this quick document I will outline the ways in
+which you can achieve that. This guide will mainly focus on two levels
+of privacy. The first level will focus on more standard privacy, which
+will make it harder for an individual to get details about you such as
+your name and address. This will mainly focus on requiring several
+layers of &#8216;exposure&#8217; to get to your identity. For this document,
+&#8216;exposure&#8217; is defined as records being accessed, be it from a hack,
+malicious actor with legitimate access, a malicious online store, or a
+subpoena (though if you are actually under investigation from a
+government entity they will just subpoena all required sets of records).<br>
+<br>
+The second level, for the more paranoid of us, will aim to make it very
+difficult for anybody to retroactively determine your identity from
+your purchase based on any stored records. That said, if you were
+currently being investigated by the government it probably will not
+help you, though there is very little that could actually get you into
+trouble that you could buy online from a legitimate online web store.<br>
+<br>
+<small>For Information/Educational/Entertainment Purposes. Perform at
+your own risk. Follow all local laws.<br>
+Licensed Creative Commons AT-SA &#8211; You are free to redistribute this or
+use it&#8217;s content, even for commercial purposes.</small><br>
+<br>
+<big style="font-weight: bold;"><br>
+Your Internet Connection</big><br>
+Normally, if you are using your home internet with a normal browser
+there are two main things that may identify you: your IP address and
+browser cookies. When browsing a website your IP address will likely be
+logged by the website and your ISP (internet service provider) will log
+the fact that you loaded that specific site; though your ISP will be
+unable to see the content transmitted assuming that the site is
+encrypted using https. Your IP can trace you back to a specific
+geographical location, but you generally cannot be identified
+personally unless your ISP&#8217;s records of your IP address(s) are exposed.<br>
+<br>
+Cookies, which are small files identifying your browser, on the other
+hand, may be able to easily identify you. The site you access may place
+their own cookies on your browser for purposes such as tracking what
+pages you have viewed or identifying what user account you have signed
+in to. Additionally, however, tools like Google Analytics (which are
+implemented into a large number of sites) track your usage across the
+web and will link your activity across any site which implemented such
+tools.<br>
+<br>
+<big style="font-weight: bold;">Finding Privacy Regarding Your Internet
+Connection</big><br>
+With an exception to cookies, your internet connection has a decent
+baseline when it comes to the privacy of purchases when compared to
+other aspects of an online purchase (at least relatively speaking).
+Aside from details entered on a website (such as a name and address),
+in order to get the details of content exchanged the data from both the
+site of the purchase and the data from your ISP would have to be
+exposed. Nevertheless, there are actions that can still be taken to
+increase your privacy.<br>
+<br>
+<span style="font-weight: bold;">Cookies (lvl 1)</span>: The easiest
+way to greatly increase your privacy while purchasing items online is
+to prevent tracking from cookies. Your best bet is to simply browse the
+online store in the incognito mode of your browser, or better yet set
+your browser to clear cookies automatically.<br>
+<br>
+<span style="font-weight: bold;">Public WiFi (lvl 2ish):</span> In
+order to prevent an ISP from knowing that you accessed a specific site
+the easiest way to go about this may be to use public WiFi. By doing this
+there is no way of knowing that it was your device on that network that
+loaded the site. Though it always used to be a bad idea to process a
+payment on public WiFi in the past, now that most sites use https you
+are likely fairly safe. That said, there are three things you must take
+into consideration. First, you must make sure that your device is using
+a random MAC address. A MAC address is an identifier for your device,
+and the public WiFi may be logging MAC addresses and associating them
+with network usage. Many devices now allow you to use a randomized MAC
+address, however, so be sure to set it up to use a unique MAC address
+each time it connects to a network. Secondly, make sure your device&#8217;s
+screen cannot be seen by any cameras. Last, there must be others using
+the WiFi network while you are using it.<br>
+<br>
+<span style="font-weight: bold;">VPNs (lvl 2):</span> Usually, your
+connection goes from your device, through your ISP, then to the
+server(s) hosting the web store (albeit a bit of an
+oversimplification). Using a VPN, however, your connection goes through
+your ISP to the VPN servers, then from the VPN servers to the server(s)
+hosting the web store. Assuming the VPN does not log your connections
+(which any good VPN will not), and assuming the VPN is not malicious
+and is not hacked (which, for example, Nord VPN has been several
+times); then your ISP can see you are using a VPN, and the web store
+can see you are using a VPN, but they will never end up knowing more
+than that.<br>
+<br>
+<span style="font-weight: bold;">Tor (lvl 2):</span> Tor (a.k.a. &#8216;The
+Onion Router&#8217;) functions similar to a VPN, however, it routes your
+traffic through three different servers instead of the standard one
+that a VPN will, making it the holy grail of anonymity. Tor is free,
+open source, and can run with minimal configuration.<br>
+<br>
+<big style="font-weight: bold;"><br>
+Payment Processing</big><br>
+Payments can be the hardest or the easiest portion of this guide,
+depending on what your limitations are and what you intend to achieve.
+In the last twenty years there have been a lot of increased scrutiny on
+the financial system put into place to attempt to combat bad actors,
+but most of that is on the receiving end of money&#8212;and compared to what
+it could be in the future the nature of money could very well still be
+the wild west.<br>
+<br>
+The goal of this section is to explain how you can prevent your
+purchase from easily being attached to your name in real time or
+retroactively. Some of these methods can end up costing you more then
+if you were to just use your credit card, and most may consume extra
+time, but if you are reading this then you are probably willing to
+consider those trade offs. Some of these may require in person actions,
+so consider checking out the fourth section of this document.<br>
+<br>
+<span style="font-weight: bold;">Virtual Credit Cards (lvl 1):</span>
+There are a number of virtual credit card companies such as Privacy.com
+popping up, which allow you to create a virtual credit card that can be
+used under any name and disabled at any time. This is useful to hide
+your name from any online store, and deter fraudulent use of your
+credit card, though the virtual card company will still see a payment
+to the online store.<br>
+<br>
+<span style="font-weight: bold;">Alias/Authorized User/DBA (lvl 1):</span>
+If avoiding giving your name to an online store is all you are looking
+to do, it is possible to just invent an alias and use the modern
+banking services we are all used to. Before you get worried I&#8217;m going
+to start talking about fraud and money laundering, there are actually a
+number of mundane and legal ways to go about this. First, you could add
+an authorized user to your existing credit card under an alias and use
+that to prevent being required to give your real name when processing a
+credit card. Secondly, (assuming you&#8217;re American) you can go to the IRS
+and get an EIN (employer identification number) for said &#8216;alias&#8217; and
+cosign a credit card application with your real name (to get around no
+credit score on the EIN) to get a real credit card under the so called
+&#8216;alias&#8217;. Finally, you could file a DBA (or jurisdictional equivalent
+such as an &#8216;assumed name certificate&#8217;) to go with your &#8216;alias&#8217; and EIN
+to open a bank account under the other name. Consider this a poor man&#8217;s
+shell corporation without the legal complication of a shell corporation.<br>
+<br>
+<span style="font-weight: bold;">Prepaid Cards &amp; Gift Cards (lvl
+2): </span>You
+ever notice that nearly every corner store, gas station, and super
+market seem to have a bunch of gift cards and prepaid visas? Well you
+can always buy one of those with cash and then use that. The gift cards
+usually have no fee, but are limited to only a specific service; and
+the visa cards usually work anywhere within your country, but have a
+small fee attached.<br>
+<br>
+<span style="font-weight: bold;">Crypto: (lvl 1 or 2): </span>You can
+buy crypto through a service like Coinbase and use that on any web
+store for level one privacy as you will not give the store your name or
+personal details through the transaction. If you want level two you
+have two options: first, you can buy crypto through a method that does
+not require personal details (such as with cash or prepaid visas); or
+you can buy it through methods like Coinbase and then move it around a
+few times, such as converting it to Monero and back several times. That
+said, between tools like Cipher Trace having unknown capabilities&#8212;and
+moving crypto around to hide it&#8217;s origin possible counting as money
+laundering&#8212;I can&#8217;t recommend doing that in any normal situation.<br>
+<br>
+<span style="font-weight: bold;">Money Orders (lvl 2): </span>Despite
+the fact that you cannot cash a money order or check (or cheque, as you
+sophisticated people would spell it), sending a money order using cash
+is standard procedure. You can hand over the cash, fill out the money
+order, and mail it without any form of ID and sign it with any name. I
+actually new a guy who said he signed &#8220;Daffy Duck&#8221; on things like this.<br>
+<br>
+<br>
+<big style="font-weight: bold;">Shipping and Receiving</big><br>
+This is probably the hardest part, since you actually need to pick it
+up from an address that you (presumably) have permission to ship to.
+That said, there are a number of ways to do this. If you are planning
+to simply avoid having the web store find your real name and/or home
+address there are a number of ways you can go about it, and there are
+still ways to go above and beyond.<br>
+<br>
+Credit where credit is due, the last
+two methods are ripped strait from J.J. Luna&#8217;s book<span style="font-style: italic;"> How to Become
+Invisible, third edition.</span><br>
+<br>
+<span style="font-weight: bold;">Alias and Home Address (lvl 1):</span>
+If all you want to do is keep the web store from knowing your name, you
+can always just ship a purchase to your home address under a different
+name.<br>
+<br style="font-weight: bold;">
+<span style="font-weight: bold;">PO Boxes, etc (lvl 1):</span> There
+are a large number of services that allow you to collect mail at a
+different address then your home address. From PO boxes, FedEx or UPS
+boxes, and mail forwarding services, these all allow you to collect
+mail without it being shipped to your home. Additionally, more one time
+services such as general delivery at post offices and amazon lockers
+allow you to pick up shipments on a more one time usage (and are
+generally free). You almost always need ID to use one of these services
+(though some smaller private mail forwarding/collection services may
+not require ID), however, you can usually still receive mail under
+different names if you have registered it as a DBA or jurisdictional
+equivalent.<br>
+<br>
+<span style="font-weight: bold;">Hotels (lvl 1 or 2):</span> If you are
+staying at hotels, motels, or airbnbs then you can probably ship mail
+to that location. However, most (but not all) places will require an ID
+and/or a credit card for a security deposit.<br>
+<br>
+<span style="font-weight: bold;">Non-Local Local Businesses (lvl 2):</span>
+It could be possible for you to ask around (best bet is on sites like
+Craigslist or equivalents) and see if a small business a bit of a
+distance away would be willing to receive your mail in exchange for a
+few bucks.<br>
+<br>
+<span style="font-weight: bold;">Uninhabited Properties (lvl 2): </span>If
+you know of any uninhabited properties (from abandon warehouses to
+houses that are for sale but uninhabited), and you are able to track
+when the shipment will arrive, you could probably ship your mail to
+that property and pick it up when it&#8217;s arrived. It probably would not
+be morally or legally stealing since that would be your package, but
+I&#8217;m unsure if that&#8217;d be totally legal to ship to a property you do not
+own or have permission to ship to; as well as possible trespassing
+violations. If you did this you would probably want to bring a receipt
+for the shipment on the off chance you were questioned, as it probably
+would not look good if you were taking mail from a property you did not
+have permission to be on that did not match the name on your ID.<br>
+<br>
+<br>
+<big style="font-weight: bold;">In Person Anonymity</big><br>
+To most people, going somewhere in person seems to provide the most
+privacy, while doing something online seems to provide the least.
+However, if you understand how to achieve privacy using tech then the
+reverse is actually true. This section of the guide is meant to provide
+you with a basic guide to &#8216;flying under the radar&#8217; so to speak when
+performing actions in person (from picking up packages to buying items).<br>
+<br>
+<span style="font-weight: bold;">Picking a Location: </span>To begin,
+you first need to choose where you will be. Your best bet is to go
+several towns or even a city away. Furthermore, if what you are buying
+is from a store, choose one you are rarely (if ever) in.<br>
+<br>
+<span style="font-weight: bold;">Getting to the Location: </span>It
+really doesn&#8217;t matter how you get to the area, but it does matter that
+you walk the final distance. If you drove, rode a bike, or took public
+transport then make sure to stop a couple of blocks away and walk the
+rest of the distance. Yes, there may be records of you being in the
+area, but that is not important as long as there are no easy records of
+you traveling to that specific location. This certainly would not be a
+good strategy if you were committing a crime (or at least a serious
+crime), but if you are just looking to fly under the radar then it
+doesn&#8217;t matter that there are records of you being in a city, only that
+there are no records of you being a specific person at a specific store
+(or other intended location).<br>
+<br>
+<span style="font-weight: bold;">Cell Phones: </span>There is no need
+for you to buy a burner phone or leave your personal at home. Just turn
+it on airplane mode and then wrap it in tin foil (or another signal
+blocking method) to prevent it from pinging cell towers. Please note
+that it is supposedly possible for some cell phones, even ones
+uncompromised with malware or other malicious software, to ping a cell
+tower or operate other wireless communication while in airplane mode or
+while turned off&#8212;so signal blocking using tin foil and the like is
+still useful. If you really need an electronic device bring a tablet
+with the location, WiFi, and Bluetooth turned off and do not connect it
+to the internet while you are near the location. If you really need a
+device for GPS use that tablet, but make sure that the maps software is
+not storing your location/history and the location is turned off before
+you get to the location you are going. If you are on Android consider
+trying OSMand.<br>
+<br>
+<span style="font-weight: bold;">Clothing: </span>Most of your
+clothing
+does not matter too much, just make sure to wear clothing that does not
+stand out and that hides any tattoos or other marking features of your
+body. A hat is also good for hiding your face a bit, especially from
+cameras. Gloves, if they do not stand out, will prevent fingerprints
+(but gloves themselves can sometimes leave a unique print), however,
+this is not something to worry about unless you are planning on
+committing some sort of crime and thus outside of this guide.<br>
+<br>
+<span style="font-weight: bold;">Facial Recognition:</span> With many
+city governments and business now applying facial recognition to all
+individuals within the vicinity of the scanners, it now may be worth
+addressing facial recognition regardless of whether you are actually
+committing a crime or not (not that commuting crimes is recommended by
+this guide). Facial recognition works by identifying mostly the eyes
+and shape of the face, though some more advanced ones can now identify
+you based on things such as your walk as well. That said, hiding your
+face will be your best bet, and a nondescript brimmed hat to block your
+face entirely from certain angles is a good start. Additionally, since
+eyes are the focus a pair of sunglasses are the next logical step.
+However, since many cameras use infrared light you may need a special
+pair of sunglasses to prevent your sunglasses from appearing completely
+clear to the camera. You can pay like $400 for a pair of reflectables
+brand glasses, or you can buy an $8 pair of infrared resistant
+sunglasses intended to prevent second hand Infrared and UV exposure in
+lab or welding environments.<br>
+<br>
+<span style="font-style: italic;">Please note that while large amounts
+of infrared or UV is dangerous (which is why those protective glasses
+are made) infrared is naturally occurring. Some infrared cameras use
+naturally occurring infrared light, and some make a small amount of
+their own, but do not worry your eyes are not in danger from infrared
+capable cameras.</span><br>
+<br>
+Finally, regarding facial recognition, a mask may be a useful tool. In
+the past it would have drawn too much attention, and in many
+jurisdictions such as New York it was (and still technically is)
+illegal to wear a mask in public; however, at the time of writing this
+it is acceptable to wear a mask in public. A mask like a bandanna would
+be best for anonymity, since it hides the shape of your entire face
+instead of showing your cheekbone size in the case of a surgical/n95
+mask, and is not tight enough to show your face&#8217;s outline like in the
+case of a neck gator. That said, plenty of facial recognition software
+was quickly updated to identify people wearing masks during 2020
+(albeit with a lesser degree of accuracy), both because eyes are more
+so the focus, and because surveillance always finds a way.<br>
+<br>
+<br>
+<big style="font-weight: bold;">Closing Notes</big><br>
+I figured I&#8217;d leave the more boring monologue to the end here, so
+continue on at your own risk. Anyway, I have been hanging around in the
+virtual precious metals communities a bit lately and hear plenty of
+sentiment regarding the need for privacy (which who can blame anybody
+if you are storing literal gold or other precious metals at your home).
+Now, I don&#8217;t have too much, and most all of it is ETFs in my Roth
+(blasphemous, I know); but since I&#8217;m in tech I thought that something
+like this might be found useful by some people. I&#8217;ve also heard about
+plenty of issues in other areas, from online knife sellers in Australia
+having issues to people just wanting privacy on sensitive purchases.<br>
+<br>
+Anyway, whether you are buying gold or sex toys, if you are looking for
+privacy then I hope I helped you with this guide. As noted above, you
+are free to redistribute this guide in any way you see fit. I&#8217;m just
+going to toss it up on the internet and if you find it interesting then
+feel free to share it around.<br>
+<br>
+<span style="color: rgb(0, 102, 0);">All content in /tutorials is
+licensed </span><span style="font-style: italic; color: rgb(0, 102, 0);">Creative Commons
+Attribution-Share Alike</span><span style="color: rgb(0, 102, 0);">
+unless otherwise specified. Feel free to share it around and re-use it,
+but please give me credit if you do so (and would love if you sent me a
+message or something). You can also<span style="color: rgb(0, 0, 153);">
+</span></span><a style="color: rgb(0, 0, 153); text-decoration: underline;" href="https://nathankmbowie.com/tips.html">send me a tip</a><span style="color: rgb(0, 102, 0);"> if you found this helpful, but no
+pressure - this is a hobby.</span><br>
+<br>
+Contact Me:<br>
+Mastodon @natebowie@mastodon.social<br>
+Twitter @NathanBowie6<br>
+</div>
+
+<br>
+
+<br>
+
+</body></html>
