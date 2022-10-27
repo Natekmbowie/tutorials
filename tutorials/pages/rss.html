@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Article</title>
+  
+
+  
+  
+  <style>/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html{-webkit-text-size-adjust:100%;color:#222;font-size:1em;line-height:1.4}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}strong{font-weight:bolder}small{font-size:80%}img{border-style:none;vertical-align:middle}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}.clearfix::after,.clearfix::before{content:"";display:table}.clearfix::after{clear:both}@media print{*,::after,::before{background:#fff!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]::after{content:" (" attr(href) ")"}img{page-break-inside:avoid}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
+/*!
+* Site Partially Based on / Inspired By Bootstrap Grid v4.6.2 (https://getbootstrap.com/). Thank you Developers!
+*/
+html{box-sizing:border-box;-ms-overflow-style:scrollbar;color:#fff;font-size:1rem;font-family:"Open Sans",sans-serif;text-align:center}*,::after,::before{box-sizing:inherit}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col,.col-12,.col-lg-8,.col-md-10,.col-sm-11{position:relative;width:100%;padding-right:15px;padding-left:15px}.col{flex-basis:0;flex-grow:1;max-width:100%}.row-cols-1>*{flex:0 0 100%;max-width:100%}.row-cols-2>*{flex:0 0 50%;max-width:50%}.col-12{flex:0 0 100%;max-width:100%}@media (min-width:576px){.row-cols-sm-2>*{flex:0 0 50%;max-width:50%}.row-cols-sm-3>*{flex:0 0 33.333333%;max-width:33.333333%}.col-sm-11{flex:0 0 91.666667%;max-width:91.666667%}}@media (min-width:768px){.row-cols-md-6>*{flex:0 0 16.666667%;max-width:16.666667%}.col-md-10{flex:0 0 83.333333%;max-width:83.333333%}}@media (min-width:992px){.row-cols-lg-3>*{flex:0 0 33.333333%;max-width:33.333333%}.col-lg-8{flex:0 0 66.666667%;max-width:66.666667%}}.d-flex{display:flex!important}.align-items-center{align-items:center!important}.mx-auto{margin-right:auto!important;margin-left:auto!important}body{background-color:#111}a{color:#069;text-decoration:none}a:active,a:focus,a:hover{text-decoration:underline}h1{font-size:3.2rem;line-height:1.2em}h2{font-size:2rem}h3{color:#555;font-size:1.2rem;margin-bottom:0}.btn-download{color:#fff;display:inline-block;font-size:1.5em;padding:.6em 1em;position:relative;text-decoration:none;text-shadow:0 -1px 0 rgba(0,0,0,.5);vertical-align:middle;border-radius:4px;background-color:#d9750b;background-image:linear-gradient(#f90 10%,#e76a00 100%);box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 1px 3px rgba(0,0,0,.2);border:1px solid #995309}.btn-download:active,.btn-download:focus,.btn-download:hover{text-decoration:none;background-color:#e0811b;background-image:linear-gradient(#f0a100 10%,#f70 100%)}.btn-download:active{background-color:#cf6a00;box-shadow:0 2px 3px 0 rgba(0,0,0,.2) inset}nav{padding-top:50px}.site-logo{color:#fff;float:left;font-size:1.5rem;font-weight:700;text-decoration:none;text-shadow:2px 2px 0 #000;text-transform:uppercase}.star{color:#e08524}footer a{color:#ffa000}footer{font-size:.9rem;padding:2em;margin-bottom:25px;margin-top:25px}.site-nav{float:right;list-style-type:none;margin-top:7px;padding:0}.aside a{margin:5px}.aside img{margin-right:5px}.site-nav a{color:#ffa000;display:block;text-decoration:none;text-transform:uppercase}.site-nav a:active,.site-nav a:focus,.site-nav a:hover{color:#fff}header{margin-bottom:85px;margin-top:85px}header p{color:#ddd;font-size:1.25rem;margin:25px}.changelog{color:#999;display:block;margin-top:10px}.section-features h3{color:#111;margin:8px}.section-features p{padding:0 15px 6px}.section-features .col{margin-bottom:25px;margin-top:15px}.section-features img{margin-bottom:9px}main{background-color:#eee;color:#222}section{padding:35px 0 55px}.aside{background-color:#ccc;padding:25px 0;border-top:1px solid #bbb}.section-who-uses{color:#222;border-top:1px solid #bbb;background-color:#ddd}.section-who-uses .col{margin-bottom:9px;margin-top:9px}.section-who-uses img{text-align:center;max-width:90%;vertical-align:middle;max-height:40px;display:flex;align-items:center;margin-left:auto;margin-right:auto;padding:6px}.inline-block-list li{display:inline-block;margin-left:12px}.inline-block-list li:first-child{margin-left:0}@media only screen and (max-width:768px){html{font-size:calc(.8rem + .5vw)!important}h1{font-size:calc(1.4rem + 1.5vw)!important}h2{font-size:calc(1.2rem + 1vw)!important}.site-logo,.site-nav{float:none!important}.site-nav li{margin:0 .5em}header{margin-top:40px!important}header p{font-size:calc(1rem + .3vw)!important}section{padding:25px 0!important}.inline-block-list li{display:block;margin:0 auto 1.5em}.inline-block-list li:last-child{margin-right:1.5em}}@media only screen and (max-width:575px){.site-logo{float:none!important}header{margin-top:30px}.site-nav{text-align:center;float:none;display:block}.section-who-uses img{padding-left:15px;padding-right:15px}.aside .inline-block-list li{display:block;margin-top:15px;margin-bottom:15px}}</style></head><body>
+<div style="text-align: left;"><a href="../index.html">&lt;---&nbsp;&nbsp;
+return to all articles</a><br>
+</div>
+
+<h1><span style="color: rgb(0, 102, 0);">The Best&#8482; way to follow content (RSS Feeds)</span>
+</h1>
+
+<div style="text-align: left;"><span style="text-decoration: underline;"></span><span style="text-decoration: underline;"></span><span style="font-weight: bold;">Why?</span><br>
+I hopefully got your attention with that title, but yeah, if you are
+willing to put a little bit of legwork I will lay out why I personally
+like RSS feeds and prefer to use them over other ways to subscribe to
+content. And I really do mean anything. You want to follow a twitter
+account? RSS Feeds. YouTube videos, or videos on another video
+platform? RSS Feeds. Want to avoid filling up your inbox with
+newsletters for blogs or project updates? RSS feeds. <br>
+<br>
+Feeds aren't really all that new, in fact they are almost as old as I
+am. The concept is pretty simple, you have a file accessed over the
+internet which lists off a bunch of different &#8220;items&#8221; which your feed
+reader can view and show to you. Whenever the feed is updated the feed
+reader sees that and shows it to you, and whenever you open the entry
+the reader marks it as read and likely hides it. These entries can be
+just about anything, from written content like news articles, to
+YouTube videos, to the top posts of a sub reddit.<br>
+<br>
+Now, there&#8217;s a few reasons why I like this sort of setup, so I figured
+I would lay them out before I run down the basics on reading them
+(though they&#8217;re pretty simple), and what your options for readers are.
+The first reason worth talking about feeds is privacy. Unlike, say, a
+YouTube account with subscriptions, you don&#8217;t need to create any sort
+of account to subscribe to feeds, even, for example, if you subscribe
+to a bunch of YouTube channels through feeds. In the case of text
+content you can usually read it within the reader, and in the case of
+some content such as videos you can open it in an external web browser
+and view without signing in.<br>
+<br>
+Secondly, feeds allow a lot more customization in how you view your
+content. Usually, if you are loading text based articles within your
+feed reader you just get the text without a million images, ads, and
+recommended posts. If you are opening the link in a browser, such as
+with YouTube, you can load it into something like NewPipe or a browser
+of your choosing with your own customization. This could be, say, a
+browser with ad block and sponsor block that clears cookies the second
+you close it (this is doable on Android with the Fennec fork of Firefox
+allowing desktop add-ons).<br>
+<br>
+Third, there&#8217;s no algorithms or recommended content, just the content
+you specifically subscribed to. For some people that might be a
+drawback, but personally I find it a bit more productive to consume the
+content I want to while cutting out any distractions or rabbit holes
+that I could end up going down.<br>
+<br>
+Last, you can easily mix and match content. Take videos for example, if
+you were to watch YouTube from within the app, from within NewPipe, or
+by loading the site and viewing your subscriptions from within a web
+browser then you are stuck on YouTube. Personally, for example, if
+anybody is hosting a PeerTube instance they keep up to date I would
+prefer to watch it on there since they went through the effort to get
+it running. Or, for example, when creators like Mental Outlaw post
+additional content on Odysee that they don&#8217;t post on YouTube. While
+I&#8217;ve used feeds on and off for years, this is what got me to switch my
+video watching all to feeds somewhat recently. While manually checking
+one or two channels on Odysee, a couple of PeerTube instances, plus a
+half dozen Substacks and blogs is something that would be a bit time
+consuming, feeds make it super easy. For example, you can easily have a
+folder for video subscriptions, and subscribe to a bunch of channels
+over a half a dozen different platforms, and still never even notice it
+since they get merged into the same list of content as if you were
+looking at a YouTube subscription list.<br>
+<br>
+<span style="font-weight: bold;">How</span>:<br>
+So, if you&#8217;re still interested, here&#8217;s where I&#8217;ll go over the basics of
+reading feeds and what different setups you can choose. The process is
+pretty simple, you just take the feed link and add the feed to your
+reader. It&#8217;s usually advertised with the RSS icon, <a href="getfeeds.html">but I&#8217;ve also written about getting feeds for a whole bunch of services that don&#8217;t advertise it</a>
+(video platforms, social medias, ect). Next, though it varies according
+to what reader you are using, you can generally name the feed, add it
+to a particular folder or group, and chose how the reader will open the
+content that comes in.<br>
+<br>
+You have a few options to view feeds though. My favorite way is to just
+use the Feeder app on Android and Thunderbird on my computer (though
+there are tons of options for local feed reading software). I usually
+access the feeds on a phone, tablet, and computer, so one drawback with
+this setup is I can&#8217;t track what I&#8217;ve read across all devices (Feeder
+does allow a sync to be set up but I personally don&#8217;t use it). For some
+feeds that doesn&#8217;t matter for me personally, like with my news feeds I
+usually scroll through and read what I want to then mark everything as
+read. For feeds like my video feeds that I usually consume most of the
+content that gets put out, I usually just consume them on whatever
+device, and then mark the stuff I watched as read on my phone which I
+use as the reader to keep track of what I&#8217;ve watched and what I haven't.<br>
+<br>
+Additionally, you can also read feeds in readers like Feedly (not to be
+confused with the Feeder app, which is unrelated). Feedly is a service,
+similar to the discontinued Google reader, that you can add your feeds
+to and then consume them in their app or on their website, keeping
+track of what you&#8217;ve watched and what you haven't. It cuts back on the
+privacy aspect a bit, since it&#8217;s now Feedly trying to capture data and
+sell ads to you, but it&#8217;s still really convenient to keep track of what
+you want to watch, read, or listen to in one place without algorithms
+and the like. Services like that are also a little more user friendly,
+for example, you often don&#8217;t even need to get the feed link and can
+instead just search for it and subscribe from within the site.<br>
+<br>
+Last, there are also some self hosted feed media servers. Using
+something like FreshRSS you would install it to a home server or a VPS
+and then it would pull all the data from your feeds and keep track of
+what you&#8217;ve watched across different devices while still allowing you
+to control all your data since it&#8217;s on your device as apposed to being
+provided by a company. It&#8217;s a little bit drastic in my opinion though,
+given you need a home server or VPS, so it&#8217;s probably only useful for a
+small percentage of people consuming content.<br>
+<br>
+Well, concludes my intro into feeds. I started working in content about
+feeds since I was working on updating my website and had to manually
+make a feed from scratch, so while they&#8217;re on my mind I&#8217;ll probably
+write about <a href="getfeeds.html">how to subscribe to things with feeds that don&#8217;t appear to support them</a> (while avoiding those freemium &#8220;create a feed&#8221; websites), <a href="rsstemplate.html">how to create one from scratch</a> to allow people to follow your content that you totally control, and <a href="creatorfeeds.html">why I think content creators could benefit from creating their own feeds</a>.<br>
+<br>
+<br>
+<span style="color: rgb(0, 102, 0);">All content in /tutorials is
+licensed </span><span style="font-style: italic; color: rgb(0, 102, 0);">Creative Commons
+Attribution-Share Alike</span><span style="color: rgb(0, 102, 0);">
+unless otherwise specified. Feel free to share it around and re-use it,
+but please give me credit if you do so (and would love if you sent me a
+message or something). You can also<span style="color: rgb(0, 0, 153);">
+</span></span><a style="color: rgb(0, 0, 153); text-decoration: underline;" href="https://nathankmbowie.com/tips.html">send me a tip</a><span style="color: rgb(0, 102, 0);"> if you found this helpful, but no
+pressure - this is a hobby.</span><br>
+<br>
+Contact Me:<br>
+
+Mastodon @natebowie@mastodon.social<br>
+
+Twitter @NathanBowie6<br>
+</div>
+
+<br>
+
+<br>
+
+</body></html>

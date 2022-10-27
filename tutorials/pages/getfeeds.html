@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html><head>
 
+
   
   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Article</title>
   
@@ -17,14 +18,183 @@ html{box-sizing:border-box;-ms-overflow-style:scrollbar;color:#fff;font-size:1re
 return to all articles</a><br>
 </div>
 
-<h1><span style="color: rgb(0, 102, 0);">Title</span><br>
+<h1><span style="color: rgb(0, 102, 0);">Get an RSS Feed for Anything</span><br>
 </h1>
 
-<div style="text-align: left;"><span style="text-decoration: underline;">Download a PDF/EPUB version from
-Smashwords (free)</span><br><span style="text-decoration: underline;">
-Read on Hive.Blog</span><br>
+<div style="text-align: left;"><span style="text-decoration: underline;"></span>This
+is all about how to get an RSS feed for various services. Some natively
+support it and some we have to jump through some hoops, but by the end
+hopefully you should know how to subscribe to most platforms you might
+want to follow. As a rule, I&#8217;d like to avoid listing out any method
+that requires you register on a third party site in order to
+get/generate an RSS feed. Anyway, lets get started.<br>
 <br>
-Lorum Epsom<br>
+<h3>First off, let&#8217;s start with video sharing platforms:</h3>
+<br>
+<span style="font-weight: bold;">How to get a YouTube channel RSS feed:</span><br>
+The simplest way to subscribe to YouTube with RSS is to go to the
+YouTube channel&#8217;s home page, view the page source (generally by right
+clicking and choosing &#8220;view source&#8221;), and search &#8220;xml&#8221;. The last time
+it appears on the site (generally the fourth time) is a link, which can
+be copied and added to a feed reader. Additionally, apps like NewPipe
+or browser extensions can get the feed link as well.<br>
+<br>
+A feed can also be gotten from an Invidious instance (a YouTube front
+end that blocks ads and increases privacy), and from OpenRSS.org.<br>
+<br>
+<span style="font-weight: bold;">How to get an Odysee, a PeerTube, or 3Speak.tv Channel RSS Feed:</span><br>
+On Odysee, PeerTube, and 3Speak there is a subscribe via RSS option on each channel page &#8211; no extra effort required.<br>
+<br>
+<span style="font-weight: bold;">How to get a Bitchute RSS feed:</span><br>
+Bitchute has a tutorial in their FAQ, but it all boils down to going
+https://www.bitchute.com/feeds/rss/channel/[channel], replacing
+[channel] with whatever comes after /channel when opening the channel&#8217;s
+home page.<br>
+<br>
+<span style="font-weight: bold;">How to get a Rumble RSS feed:</span><br>
+The platform Rumble will give you an RSS feed link themselves if you
+pay for a premium account. However, an RSS feed can also be generated
+with OpenRSS.org for free without any registration.<br>
+<br>
+<span style="font-weight: bold;">How to get a Patreon RSS feed:</span><br>
+Surprisingly, it is possible to get a feed for Patreon content, but
+it&#8217;s pretty limited. You first need to subscribe to the content with a
+Patreon account, then the creator must have enabled the RSS feature to
+create an individualized RSS feed for each subscriber.<br>
+<br>
+I had no luck being able to generate a feed for <span style="font-weight: bold;">D.Tube</span>, <span style="font-weight: bold;">Daily Motion</span>, and <span style="font-weight: bold;">Utreon</span> unfortunately.<br>
+<br>
+<h3>Written Content:</h3>
+Beyond video platforms, however, are blogs, news sites, and other text
+based content. There&#8217;s a lot of platforms so I figured I would list off
+as many as I can, though luckily for a lot of them there&#8217;s not a lot of
+complications to getting an RSS feed.<br>
+<br>
+<span style="font-weight: bold;">How to get a WordPress RSS feed:</span><br>
+Most WordPress blogs will have a feed listed on their home page, but if
+they don&#8217;t go to the main site and then type /rss (e.g.
+example.com/rss). You can also do this for various tags by going to the
+tag&#8217;s page and adding /rss to the end of the URL.<br>
+<br>
+<span style="font-weight: bold;">How to get a Blogspot / Blogger RSS Feed:</span><br>
+While there&#8217;s the option to create a feed button on a Blogspot site,
+all of them will have RSS enabled. Simple go to the main page and then
+paste /feeds/posts/default?alt=rss after the URL (e.g.
+example.blogspot.com/feeds/posts/default?alt=rss).<br>
+<br>
+<span style="font-weight: bold;">How to get a Medium RSS Feed:</span><br>
+A Medium feed for an author can be gotten by going to the author&#8217;s page and adding /feed to the URL.<br>
+<br>
+<span style="font-weight: bold;">How to get a Hive.Blog RSS Feed:</span><br>
+While Hive doesn&#8217;t support RSS natively, using HiveRSS.com you can
+create a feed for a user, topic, and a whole bunch more. An RSS feed
+for a username can be created by going to
+hiverss.com/@&lt;username&gt;/feed, but the HiveRSS.com website has a
+lot more in depth info for a bunch of different customization you can
+set up.<br>
+<br>
+<span style="font-weight: bold;">How to get a Tumblr RSS Feed:</span><br>
+In order to get an RSS Feed from a Tumblr blog just navigate to the blog&#8217;s main page and add /rss to the end of the URL.<br>
+<br>
+<span style="font-weight: bold;">How to get an RSS feed for most news sites:</span><br>
+Most news sites have RSS support, though it varies from site to site.
+Here&#8217;s my recommendation though: first, scroll to the bottom of the
+site and look for the RSS icon or a link referring to RSS. If
+that&nbsp; fails, look for a sitemap and read through it for any RSS
+links. If you still cannot find an RSS link search
+&#8220;site:[news-site-url] RSS&#8221; in your favorite search engine. If you get
+no results, try searching just the name of the news site plus &#8220;RSS&#8221;. If
+you still can&#8217;t find anything then you might be out of luck.<br>
+<br>
+<span style="font-weight: bold;">How to get a Ground News RSS Feed:</span><br>
+Using OpenRSS.org you can create a Ground News RSS feed instead of relying on their app or website.<br>
+<br>
+<span style="font-weight: bold;">How to get a Substacks RSS Feed:</span><br>
+Like with a lot of text based content listed here, an RSS Feed is there
+but hidden. Go to the author&#8217;s page and add /feed the URL (e.g.
+https://[author].substack.com/feed).<br>
+<br>
+Last, in regards to written content, <span style="font-weight: bold;">Steemit</span>
+used to have steemrss.com like Hive, however, that website is no longer
+maintained as of writing this (and somebody else might have bought the
+domain). Unfortunately, I can&#8217;t find anything else that would allow a
+subscription to someone on Steemit via RSS.<br>
+<br>
+<h3>Audio</h3>
+Next in line is audio, which is going to be a much shorter section than
+that on written content. This is going to mostly just be podcasts, with
+one minor exception being <span style="font-weight: bold;">Soundcloud</span>.
+Soundcloud allows the creator to create an RSS feed for listeners to
+subscribe to, so while it is an option not all creators will have one.
+This appears to apply to both podcasts and music. Similarly, it is
+possible to get an RSS feed from <span style="font-weight: bold;">Itunes</span>
+(podcasts only though). However, you can only get the RSS feed while
+signed into the desktop app for podcasts you have already subscribed to
+in Itunes. <span style="font-weight: bold;">Spotify</span> has no RSS compatibility whatsoever.<br>
+<br>
+Beyond the aforementioned platforms, however, most self published
+podcasts will have some form of RSS Feed to integrate into podcast apps
+and platforms. You can usually find a feed advertised on the website
+and/or socials of a podcast, but it obviously varies from creator to
+creator.<br>
+<br>
+<h3>Social Media</h3>
+Finally, I figured I would touch on social media. It&#8217;s a bit shorter
+since a good portion of social media (SnapChat, Facebook, etc) aren&#8217;t
+the kind of thing you&#8217;d create a feed for. The only social media where
+that&#8217;d be the case is stuff that is 100% public, like Twitter or Reddit.<br>
+<br>
+<span style="font-weight: bold;">How to get a Twitter RSS Feed:</span><br>
+OpenRSS.org will create an RSS feed for a Twitter account that you can
+add to a feed reader. Additionally, Nitter instances (a privacy/ad free
+twitter front end) will allow you to subscribe to tweets put out by any
+user, but you will not be able to sign into twitter to respond/react
+through the front end.<br>
+<br>
+<span style="font-weight: bold;">How to get a Reddit RSS Feed:</span><br>
+You can add /.xml to nearly any Reddit URL to get a feed. This works
+for subreddits (e.g. https://www.reddit.com/r/thehatedone/hot/.xml)
+which can be sorted by trending/hot/new, user profiles, and comments on
+specific posts. In each of those scenarios go to the page with the
+content you wish to subscribe to, then add /.xml to the end of the URL.<br>
+<br>
+<span style="font-weight: bold;">How to get a Mastodon RSS Feed:</span><br>
+Similar to reddit, navigate to the username of the profile you want a
+feed for and then add .xml to the end of the feed (e.g.
+https://mastodon.social/@Tutanota.rss). Unlike all the other additions
+to URLs, there is no &#8220;/&#8221; added to a Mastodon feed. Unfortunately, not
+all Activity Pub based social media (e.g. Plemora) support this.<br>
+<br>
+<span style="font-weight: bold;">How to get an Instagram RSS Feed:</span><br>
+While searching out how to get a feed for Instagram I found
+https://rssbox.herokuapp.com/, however, as of writing it is scheduled
+to shut down in about 30 days. Otherwise, you would need to find
+another publicly available hosting of RSSBox or try to host it yourself.<br>
+<br>
+<h3>If all else fails/other</h3>
+If you&#8217;ve gone through my list here, searched elsewhere, and still
+cannot get a feed for a particular site/service you have additional
+options. First, there are Freemium/Paid RSS Feed creator sites like
+https://feed43.com/, https://rss.app, https://zapier.com, and
+https://fetchrss.com/. All of these services require an account, and
+usually require payment for some or all features and/or limit the
+amount of feeds you can create for free. While they are bad for privacy
+(as compared to other options), a bit of a hassle, and possibly a drain
+on your wallet, if you&#8217;re desperate you can always give them a try.<br>
+<br>
+Additionally, services like Feedly might allow you to subscribe to
+things that you would otherwise be unable to create a feed for, though
+you&#8217;d be trading off your privacy for easy subscriptions and cross
+device sync. Similarly, some self hosted options like RSS box can
+generate feeds while allowing you to control your own data, but of
+course require a home server or VPS subscription.<br>
+<br>
+Well, that&#8217;s everything. If you have any better ways of getting feeds,
+if this guide is out of date/not working, or you need any help feel
+free to contact me on Mastodon @natebowie@mastodon.social (preferred)
+or Twitter @NathanBowie6.<br>
+<br>
+I hope this was useful. <br>
 <br>
 <span style="color: rgb(0, 102, 0);">All content in /tutorials is
 licensed </span><span style="font-style: italic; color: rgb(0, 102, 0);">Creative Commons
