@@ -6,6 +6,14 @@
 	<description>A quick homebrew feed for my blog. Does not include videos/articles I work on, just very occasional content.</description>
 		<item>
 	 <title>A New Site</title>
+	 <pubDate>Sat, 19 Nov 2022 19:00:00 -0400</pubDate>
+	 <link>https://nathankmbowie.com/blog.html#A_New_Site2</link>
+	 <description>Rambling on about some minor touch up work on my site, and some design changes to make it mobile friendly.</description>
+	
+	
+	
+	</item>
+	<title>A New Site</title>
 	 <pubDate>Sun, 16 Oct 2022 19:00:00 -0400</pubDate>
 	 <link>https://nathankmbowie.com/blog.html#A_New_Site</link>
 	 <description>After about a year hosting on IPFS I decided to revamp my site and transition where I host my site (though I'll still mirror on IPFS). I also updated my blog for the first time in over a year.</description>
