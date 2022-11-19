@@ -1,44 +1,69 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-
-  
-  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Blog</title>
-  
-
-  
-  
-  <style>/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog</title>
+<style>/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html{-webkit-text-size-adjust:100%;color:#222;font-size:1em;line-height:1.4}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}strong{font-weight:bolder}small{font-size:80%}img{border-style:none;vertical-align:middle}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}.clearfix::after,.clearfix::before{content:"";display:table}.clearfix::after{clear:both}@media print{*,::after,::before{background:#fff!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]::after{content:" (" attr(href) ")"}img{page-break-inside:avoid}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
 /*!
 * Site Partially Based on / Inspired By Bootstrap Grid v4.6.2 (https://getbootstrap.com/). Thank you Developers!
 */
-html{box-sizing:border-box;-ms-overflow-style:scrollbar;color:#fff;font-size:1rem;font-family:"Open Sans",sans-serif;text-align:center}*,::after,::before{box-sizing:inherit}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col,.col-12,.col-lg-8,.col-md-10,.col-sm-11{position:relative;width:100%;padding-right:15px;padding-left:15px}.col{flex-basis:0;flex-grow:1;max-width:100%}.row-cols-1>*{flex:0 0 100%;max-width:100%}.row-cols-2>*{flex:0 0 50%;max-width:50%}.col-12{flex:0 0 100%;max-width:100%}@media (min-width:576px){.row-cols-sm-2>*{flex:0 0 50%;max-width:50%}.row-cols-sm-3>*{flex:0 0 33.333333%;max-width:33.333333%}.col-sm-11{flex:0 0 91.666667%;max-width:91.666667%}}@media (min-width:768px){.row-cols-md-6>*{flex:0 0 16.666667%;max-width:16.666667%}.col-md-10{flex:0 0 83.333333%;max-width:83.333333%}}@media (min-width:992px){.row-cols-lg-3>*{flex:0 0 33.333333%;max-width:33.333333%}.col-lg-8{flex:0 0 66.666667%;max-width:66.666667%}}.d-flex{display:flex!important}.align-items-center{align-items:center!important}.mx-auto{margin-right:auto!important;margin-left:auto!important}body{background-color:#111}a{color:#069;text-decoration:none}a:active,a:focus,a:hover{text-decoration:underline}h1{font-size:3.2rem;line-height:1.2em}h2{font-size:2rem}h3{color:#555;font-size:1.2rem;margin-bottom:0}.btn-download{color:#fff;display:inline-block;font-size:1.5em;padding:.6em 1em;position:relative;text-decoration:none;text-shadow:0 -1px 0 rgba(0,0,0,.5);vertical-align:middle;border-radius:4px;background-color:#d9750b;background-image:linear-gradient(#f90 10%,#e76a00 100%);box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 1px 3px rgba(0,0,0,.2);border:1px solid #995309}.btn-download:active,.btn-download:focus,.btn-download:hover{text-decoration:none;background-color:#e0811b;background-image:linear-gradient(#f0a100 10%,#f70 100%)}.btn-download:active{background-color:#cf6a00;box-shadow:0 2px 3px 0 rgba(0,0,0,.2) inset}nav{padding-top:50px}.site-logo{color:#fff;float:left;font-size:1.5rem;font-weight:700;text-decoration:none;text-shadow:2px 2px 0 #000;text-transform:uppercase}.star{color:#e08524}footer a{color:#ffa000}footer{font-size:.9rem;padding:2em;margin-bottom:25px;margin-top:25px}.site-nav{float:right;list-style-type:none;margin-top:7px;padding:0}.aside a{margin:5px}.aside img{margin-right:5px}.site-nav a{color:#ffa000;display:block;text-decoration:none;text-transform:uppercase}.site-nav a:active,.site-nav a:focus,.site-nav a:hover{color:#fff}header{margin-bottom:85px;margin-top:85px}header p{color:#ddd;font-size:1.25rem;margin:25px}.changelog{color:#999;display:block;margin-top:10px}.section-features h3{color:#111;margin:8px}.section-features p{padding:0 15px 6px}.section-features .col{margin-bottom:25px;margin-top:15px}.section-features img{margin-bottom:9px}main{background-color:#eee;color:#222}section{padding:35px 0 55px}.aside{background-color:#ccc;padding:25px 0;border-top:1px solid #bbb}.section-who-uses{color:#222;border-top:1px solid #bbb;background-color:#ddd}.section-who-uses .col{margin-bottom:9px;margin-top:9px}.section-who-uses img{text-align:center;max-width:90%;vertical-align:middle;max-height:40px;display:flex;align-items:center;margin-left:auto;margin-right:auto;padding:6px}.inline-block-list li{display:inline-block;margin-left:12px}.inline-block-list li:first-child{margin-left:0}@media only screen and (max-width:768px){html{font-size:calc(.8rem + .5vw)!important}h1{font-size:calc(1.4rem + 1.5vw)!important}h2{font-size:calc(1.2rem + 1vw)!important}.site-logo,.site-nav{float:none!important}.site-nav li{margin:0 .5em}header{margin-top:40px!important}header p{font-size:calc(1rem + .3vw)!important}section{padding:25px 0!important}.inline-block-list li{display:block;margin:0 auto 1.5em}.inline-block-list li:last-child{margin-right:1.5em}}@media only screen and (max-width:575px){.site-logo{float:none!important}header{margin-top:30px}.site-nav{text-align:center;float:none;display:block}.section-who-uses img{padding-left:15px;padding-right:15px}.aside .inline-block-list li{display:block;margin-top:15px;margin-bottom:15px}}</style></head><body>
-<div style="text-align: left;"><a href="../index.html">&lt;---&nbsp;&nbsp;
+html{box-sizing:border-box;-ms-overflow-style:scrollbar;color:#fff;font-size:1rem;font-family:"Open Sans",sans-serif;text-align:center}*,::after,::before{box-sizing:inherit}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col,.col-12,.col-lg-8,.col-md-10,.col-sm-11{position:relative;width:100%;padding-right:15px;padding-left:15px}.col{flex-basis:0;flex-grow:1;max-width:100%}.row-cols-1>*{flex:0 0 100%;max-width:100%}.row-cols-2>*{flex:0 0 50%;max-width:50%}.col-12{flex:0 0 100%;max-width:100%}@media (min-width:576px){.row-cols-sm-2>*{flex:0 0 50%;max-width:50%}.row-cols-sm-3>*{flex:0 0 33.333333%;max-width:33.333333%}.col-sm-11{flex:0 0 91.666667%;max-width:91.666667%}}@media (min-width:768px){.row-cols-md-6>*{flex:0 0 16.666667%;max-width:16.666667%}.col-md-10{flex:0 0 83.333333%;max-width:83.333333%}}@media (min-width:992px){.row-cols-lg-3>*{flex:0 0 33.333333%;max-width:33.333333%}.col-lg-8{flex:0 0 66.666667%;max-width:66.666667%}}.d-flex{display:flex!important}.align-items-center{align-items:center!important}.mx-auto{margin-right:auto!important;margin-left:auto!important}body{background-color:#111}a{color:#069;text-decoration:none}a:active,a:focus,a:hover{text-decoration:underline}h1{font-size:3.2rem;line-height:1.2em}h2{font-size:2rem}h3{color:#555;font-size:1.2rem;margin-bottom:0}.btn-download{color:#fff;display:inline-block;font-size:1.5em;padding:.6em 1em;position:relative;text-decoration:none;text-shadow:0 -1px 0 rgba(0,0,0,.5);vertical-align:middle;border-radius:4px;background-color:#d9750b;background-image:linear-gradient(#f90 10%,#e76a00 100%);box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 1px 3px rgba(0,0,0,.2);border:1px solid #995309}.btn-download:active,.btn-download:focus,.btn-download:hover{text-decoration:none;background-color:#e0811b;background-image:linear-gradient(#f0a100 10%,#f70 100%)}.btn-download:active{background-color:#cf6a00;box-shadow:0 2px 3px 0 rgba(0,0,0,.2) inset}nav{padding-top:50px}.site-logo{color:#fff;float:left;font-size:1.5rem;font-weight:700;text-decoration:none;text-shadow:2px 2px 0 #000;text-transform:uppercase}.star{color:#e08524}footer a{color:#ffa000}footer{font-size:.9rem;padding:2em;margin-bottom:25px;margin-top:25px}.site-nav{float:right;list-style-type:none;margin-top:7px;padding:0}.aside a{margin:5px}.aside img{margin-right:5px}.site-nav a{color:#ffa000;display:block;text-decoration:none;text-transform:uppercase}.site-nav a:active,.site-nav a:focus,.site-nav a:hover{color:#fff}header{margin-bottom:85px;margin-top:85px}header p{color:#ddd;font-size:1.25rem;margin:25px}.changelog{color:#999;display:block;margin-top:10px}.section-features h3{color:#111;margin:8px}.section-features p{padding:0 15px 6px}.section-features .col{margin-bottom:25px;margin-top:15px}.section-features img{margin-bottom:9px}main{background-color:#eee;color:#222}section{padding:35px 0 55px}.aside{background-color:#ccc;padding:25px 0;border-top:1px solid #bbb}.section-who-uses{color:#222;border-top:1px solid #bbb;background-color:#ddd}.section-who-uses .col{margin-bottom:9px;margin-top:9px}.section-who-uses img{text-align:center;max-width:90%;vertical-align:middle;max-height:40px;display:flex;align-items:center;margin-left:auto;margin-right:auto;padding:6px}.inline-block-list li{display:inline-block;margin-left:12px}.inline-block-list li:first-child{margin-left:0}@media only screen and (max-width:768px){html{font-size:calc(.8rem + .5vw)!important}h1{font-size:calc(1.4rem + 1.5vw)!important}h2{font-size:calc(1.2rem + 1vw)!important}.site-logo,.site-nav{float:none!important}.site-nav li{margin:0 .5em}header{margin-top:40px!important}header p{font-size:calc(1rem + .3vw)!important}section{padding:25px 0!important}.inline-block-list li{display:block;margin:0 auto 1.5em}.inline-block-list li:last-child{margin-right:1.5em}}@media only screen and (max-width:575px){.site-logo{float:none!important}header{margin-top:30px}.site-nav{text-align:center;float:none;display:block}.section-who-uses img{padding-left:15px;padding-right:15px}.aside .inline-block-list li{display:block;margin-top:15px;margin-bottom:15px}}</style>
+</head>
+<body>
+<div style="text-align: left;"><a
+href="https://nathankmbowie.com/index.html">&lt;---&nbsp;&nbsp;
 home</a><br>
 </div>
-
 <h1><span style="color: rgb(0, 102, 0);">A Mini Blog</span><br>
 </h1>
-
 <div style="text-align: left;">
 <h2>Table of Contents<br>
 </h2>
-<ol id="mozToc"></ol>
+<ol id="mozToc">
+</ol>
 <ul>
-  <li><a href="#A_New_Site">A New Site</a></li>
-  <li><a href="#Bitrot_PSA">Bitrot PSA, a YouTube Short</a></li>
-  <li><a href="#I_Started_a_YouTube_Channel">I Started a YouTube Channel</a></li>
-  <li><a href="#Free_Promo_plus_Leaving_KU">Free Promo + Leaving KU</a></li>
-  <li><a href="#Well_Im_Live">Well, I'm Live</a></li>
-  <li><a href="#Official_Release">Official Release</a></li>
-  <li><a href="#Announcing_My_Book">Announcing My Book</a></li>
-  <li><a href="#Hello_World">Hello World</a></li>
-  <li><a href="#Subscribe_via_RSS">Subscribe via RSS</a></li>
-  <li><a href="#Contact_Me">Contact Me</a><br>
-  </li>
+<li><a href="#A_New_Site2">Updated Site (Again)</a><br>
+</li>
+<li><a href="#A_New_Site">A New Site</a></li>
+<li><a href="#Bitrot_PSA">Bitrot PSA, a YouTube Short</a></li>
+<li><a href="#I_Started_a_YouTube_Channel">I Started a YouTube Channel</a></li>
+<li><a href="#Free_Promo_plus_Leaving_KU">Free Promo + Leaving KU</a></li>
+<li><a href="#Well_Im_Live">Well, I'm Live</a></li>
+<li><a href="#Official_Release">Official Release</a></li>
+<li><a href="#Announcing_My_Book">Announcing My Book</a></li>
+<li><a href="#Hello_World">Hello World</a></li>
+<li><a href="#Subscribe_via_RSS">Subscribe via RSS</a></li>
+<li><a href="#Contact_Me">Contact Me</a><br>
+</li>
 </ul>
+<br>
+<hr style="width: 100%; height: 2px;">
+<h2><a name="A_New_Site2"></a>Updated Site (Again) </h2>
+<span style="font-weight: bold;">Posted November 19, 2022 </span><br>
+<br>
+Well, I think I've
+worked out the kinks on here. I just finished changing the layout
+slightly so that it’ll be resized to a more acceptable layout on
+mobile screens. It did mean cutting out some minor pieces of the
+layout on the home page and having fewer longer lines instead of more
+shorter lines. As much as I like the original page with a fixed
+layout, it was pretty bad on mobile, so I guess it had to go. <br>
+<br>
+Additionally, I also
+got most all my guides &amp; articles added here as well that are
+worth keeping long term. Even though a lot of my content posted on
+YouTube or Hive risks losing relevance after some time, I like having
+a directory of written content I can keep updated and/or is unlikely
+to go out of date. <br>
+<br>
+I guess it only took
+me a little over a month to finish it (and on the 16<sup>th</sup> I
+already had the basics done and considered it good enough to replace
+my previous website). I guess that’s one of the annoyances of
+making a site from scratch without a CMS, but it’s done, and it’s
+built from scratch in HTML while also (hopefully) working fine in any
+browser while loading lightening fast and containing no trackers.
 <br>
 <hr style="width: 100%; height: 2px;">
 <h2><a name="A_New_Site"></a>A New Site</h2>
@@ -62,11 +87,13 @@ but lets hope I'm still around in another two years to keep updating
 this blog.<br>
 <br>
 <hr style="width: 100%; height: 2px;">
-<h2><a name="Bitrot_PSA"></a>Bitrot PSA, a YouTube Short<span style="font-weight: bold;"></span></h2>
+<h2><a name="Bitrot_PSA"></a>Bitrot PSA, a YouTube Short<span
+style="font-weight: bold;"></span></h2>
 <h2><span style="font-weight: bold;"></span></h2>
-<span style="font-weight: bold;">Posted on January 26, 2021  </span><br>
+<span style="font-weight: bold;">Posted on January 26, 2021 </span><br>
 <br>
-My second video, a YouTube short, explaining the time in which Bitrot can take hold.<br>
+My second video, a YouTube short, explaining the time in which Bitrot
+can take hold.<br>
 https://youtu.be/Dlxtn_yO3Gw<br>
 <br>
 Okay, here is the longer version of this YouTube Short. While data loss
@@ -76,7 +103,7 @@ electronics use binary code, or ones and zeros, which are then
 interpreted by the device to recompile data in a usable form. This is
 very reminiscent of smoke signals, Morse code, and the telegram, where
 data is compressed for transportation and storage, then decompressed to
-regain it&#8217;s original meaning.<br>
+regain it’s original meaning.<br>
 <br>
 Solid state storage, such as SSDs as well as many thumb drives and SD
 cards trap electrons to store those ones and zeros. Eventually those
@@ -105,7 +132,8 @@ If you rely on physical backups for long term storage (as apposed to
 cloud storage) be sure check the storage semi regularly to stave off
 bitrot and be sure that your data is in tact.<br>
 <hr style="width: 100%; height: 2px;">
-<h2><a name="I_Started_a_YouTube_Channel"></a>I started a YouTube Channel</h2>
+<h2><a name="I_Started_a_YouTube_Channel"></a>I started a YouTube
+Channel</h2>
 <span style="font-weight: bold;">Posted January 25, 2021</span><br>
 <br>
 I like writing, and enjoyed writing my book (believe me, if I was in
@@ -114,7 +142,7 @@ writing is a capitol loss write off at the end of the year). That said,
 writing a book is a long process that does not give too much instant
 gratification and requires a lot of writing on one very specific topic.
 Yeah, there are books of essays like Shooting an Elephant and other
-essays by George Orwell, but I don&#8217;t have the clout or writing skills
+essays by George Orwell, but I don’t have the clout or writing skills
 to write articles and essays that people will pay for.<br>
 <br>
 That said, writing article sized content and providing them in both
@@ -130,45 +158,46 @@ https://youtu.be/7DykAy3Tq_c<br>
 <h2><a name="Free_Promo_plus_Leaving_KU"></a>Free Promo + Leaving KU</h2>
 <span style="font-weight: bold;">Posted September 8, 2020</span><br>
 <br>
-It&#8217;s been about five months since I made an update here, not that I get
-much traffic on this part of my website &#8211; but if you&#8217;re reading this
-then &#8216;hey. Not that I&#8217;m upset about that, I&#8217;m coming close to having
+It’s been about five months since I made an update here, not that I get
+much traffic on this part of my website – but if you’re reading this
+then ‘hey. Not that I’m upset about that, I’m coming close to having
 100 books (mostly digital) distributed and for a hobby I feel great to
 see that.<br>
 <br>
-Anyway, on to the update. On Sept. 11-15th I&#8217;ll have my second free
-promotion for an ebook copy of my book. If you&#8217;re interested in it then
+Anyway, on to the update. On Sept. 11-15th I’ll have my second free
+promotion for an ebook copy of my book. If you’re interested in it then
 that would be a great chance to check it out. Additionally, my
 exclusivity agreement with Kindle Unlimited expires Sept. 30th. Beyond
 that I hope to look into extending the distribution of my book (I think
 it would be really cool if I could pick up my own book at a Walmart or
-bookstore &#8211; even if it had to be ordered online ahead of time).<br>
+bookstore – even if it had to be ordered online ahead of time).<br>
 <br>
-Additionally, if you fact check my previous posts I said I&#8217;d increase
+Additionally, if you fact check my previous posts I said I’d increase
 the price from $0.99 to $2.99 in May. The changes is mostly due to
 royalties: Epic thinks they have it bad at 30% fees, well on Amazon if
-you charge $0.99 on your book they&#8217;ll take a $0.69 cut with the 70% fee
-becoming a 30% fee at $2.99. When I exit Kindle Unlimited I&#8217;ll probably
-raise the price. I&#8217;d tell you to buy it before it changes, but you&#8217;d be
+you charge $0.99 on your book they’ll take a $0.69 cut with the 70% fee
+becoming a 30% fee at $2.99. When I exit Kindle Unlimited I’ll probably
+raise the price. I’d tell you to buy it before it changes, but you’d be
 better off participating in the free promo I just mentioned above.<br>
 <br>
-Finally, over the next week or so I&#8217;ll probably make a few minor
-revisions to the book. Nothing insane, but I&#8217;ll probably add another
+Finally, over the next week or so I’ll probably make a few minor
+revisions to the book. Nothing insane, but I’ll probably add another
 more direct note against leaking confidential information and also note
-some of China&#8217;s new security laws and the response that some
+some of China’s new security laws and the response that some
 universities have taken to implement pseudonymity because of that as
 reasons why this form of knowledge is good to have. If you already have
 an ebook from Amazon it should update automatically to the updated
 version once it is out.<br>
 <br>
-All in all, I&#8217;m looking forward so far. Stay healthy, stay safe, and have a good one!<br>
+All in all, I’m looking forward so far. Stay healthy, stay safe, and
+have a good one!<br>
 <hr style="width: 100%; height: 2px;">
-<h2><a name="Well_Im_Live"></a>Well, I&#8217;m Live</h2>
+<h2><a name="Well_Im_Live"></a>Well, I’m Live</h2>
 <span style="font-weight: bold;">Posted April 4, 2020</span><br>
 <br>
 How to Leak Documents and Surf the Web Anonymously is officially live
 on Amazon. I currently have the ebook version at $0.99 (or free with
-Kindle Unlimited) and the paperback at $7.99. The ebook&#8217;s price will
+Kindle Unlimited) and the paperback at $7.99. The ebook’s price will
 remain $0.99 throughout the end of April when it will change to $2.99,
 and I will remain in the Kindle Unlimited program for at least the next
 90 days.<br>
@@ -176,34 +205,35 @@ and I will remain in the Kindle Unlimited program for at least the next
 <h2><a name="Official_Release"></a>Official Release</h2>
 <span style="font-weight: bold;">Posted March 24, 2020</span><br>
 <br>
-It&#8217;s official &#8211; I&#8217;m now on Goodreads and Amazon with a release date of
-April 4th 2020 and an option to pre-order my book &#8220;How to Leak
-Documents and Surf the Web Anonymously&#8221; for $0.99 or with a Kindle
+It’s official – I’m now on Goodreads and Amazon with a release date of
+April 4th 2020 and an option to pre-order my book “How to Leak
+Documents and Surf the Web Anonymously” for $0.99 or with a Kindle
 Unlimited Subscription.<br>
 <br>
 I intend to keep the book @ $0.99 for all of the month of April and on
-Kindle Unlimited for at least the first 90 days of the release &#8211; so if
+Kindle Unlimited for at least the first 90 days of the release – so if
 you are interested (especially if you have a KU subscription) then now
 is a great time to check it out.<br>
 <br>
-I&#8217;ve got an awesome editor who is working on some finishing touches,
+I’ve got an awesome editor who is working on some finishing touches,
 but otherwise everything is just about set here. If you are interested
-and reading this I&#8217;d love for you to subscribe to my blog, follow me on
+and reading this I’d love for you to subscribe to my blog, follow me on
 twitter @NathanBowie6, or simply bookmark my Amazon/Goodreads/website
 for further information.<br>
 <br>
-Thanks for taking the time to read this, I&#8217;m really excited to be releasing so soon. Wish me luck internet!<br>
+Thanks for taking the time to read this, I’m really excited to be
+releasing so soon. Wish me luck internet!<br>
 <hr style="width: 100%; height: 2px;">
 <h2><a name="Announcing_My_Book"></a>Announcing My Book</h2>
 <span style="font-weight: bold;">Posted March 22, 2020</span><br>
 <br>
-Alright, here this goes&#8230;<br>
+Alright, here this goes…<br>
 <br>
-I am announcing my book &#8220;How to Leak Documents and Surf the Web
-Anonymously&#8221; today with an intended release date of Saturday April 4th.
-If you wanna read about it you can check out my &#8220;works by me&#8221; page.<br>
+I am announcing my book “How to Leak Documents and Surf the Web
+Anonymously” today with an intended release date of Saturday April 4th.
+If you wanna read about it you can check out my “works by me” page.<br>
 <br>
-While I can&#8217;t guarantee that it will be live on the 4th that is my
+While I can’t guarantee that it will be live on the 4th that is my
 intended release date and do expect to do so by then. It will be in
 both digital and physical form, and like everything other product in
 the world (maybe minus toilet paper right now) it will be found on
@@ -212,27 +242,26 @@ well as also getting the word out (putting it on Goodreads, tweets,
 getting podcast interviews, ect).<br>
 <br>
 Wish me luck internet.<br>
-<h2></h2>
 <hr style="width: 100%; height: 2px;">
 <h2><a name="Hello_World"></a>Hello World</h2>
 <span style="font-weight: bold;">Posted March 9, 2020</span><br>
 <br>
 Okay, so I just installed WordPress. At the moment my site is pretty
-much a shell, though I&#8217;m getting it a bit more decked out here. If
-you&#8217;re reading this and there&#8217;s not much else on this site yet then
+much a shell, though I’m getting it a bit more decked out here. If
+you’re reading this and there’s not much else on this site yet then
 stay tuned, there is (hopefully) plenty more in store.<br>
 <br>
-
-<h2 style="font-weight: bold;"><a name="Subscribe_via_RSS"></a><a href="rss.xml">Subscribe via RSS</a></h2>
+<h2 style="font-weight: bold;"><a name="Subscribe_via_RSS"></a><a
+href="https://nathankmbowie.com/rss.xml">Subscribe via RSS</a></h2>
 <h2><span style="font-weight: bold;"></span></h2>
-
-<h2><span style="color: rgb(0, 102, 0);"><a name="Contact_Me"></a>Contact Me:</span></h2>
-<span style="color: rgb(0, 102, 0);">Mastodon @natebowie@mastodon.social</span><br style="color: rgb(0, 102, 0);">
+<h2><span style="color: rgb(0, 102, 0);"><a name="Contact_Me"></a>Contact
+Me:</span></h2>
+<span style="color: rgb(0, 102, 0);">Mastodon @natebowie@mastodon.social</span><br
+style="color: rgb(0, 102, 0);">
 <span style="color: rgb(0, 102, 0);">Twitter @NathanBowie6</span><br>
 </div>
-
 <br>
-
 <br>
+</body>
+</html>
 
-</body></html>
