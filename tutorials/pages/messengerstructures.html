@@ -1,0 +1,354 @@
+<html>
+<head>
+<meta content="text/html; charset=ISO-8859-1"
+http-equiv="content-type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Messenger Structures</title>
+<style>/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html{-webkit-text-size-adjust:100%;color:#222;font-size:1em;line-height:1.4}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}strong{font-weight:bolder}small{font-size:80%}img{border-style:none;vertical-align:middle}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}.clearfix::after,.clearfix::before{content:"";display:table}.clearfix::after{clear:both}@media print{*,::after,::before{background:#fff!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]::after{content:" (" attr(href) ")"}img{page-break-inside:avoid}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
+/*!
+* Site Partially Based on / Inspired By Bootstrap Grid v4.6.2 (https://getbootstrap.com/). Thank you Developers!
+*/
+html{box-sizing:border-box;-ms-overflow-style:scrollbar;color:#fff;font-size:1rem;font-family:"Open Sans",sans-serif;text-align:center}*,::after,::before{box-sizing:inherit}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col,.col-12,.col-lg-8,.col-md-10,.col-sm-11{position:relative;width:100%;padding-right:15px;padding-left:15px}.col{flex-basis:0;flex-grow:1;max-width:100%}.row-cols-1>*{flex:0 0 100%;max-width:100%}.row-cols-2>*{flex:0 0 50%;max-width:50%}.col-12{flex:0 0 100%;max-width:100%}@media (min-width:576px){.row-cols-sm-2>*{flex:0 0 50%;max-width:50%}.row-cols-sm-3>*{flex:0 0 33.333333%;max-width:33.333333%}.col-sm-11{flex:0 0 91.666667%;max-width:91.666667%}}@media (min-width:768px){.row-cols-md-6>*{flex:0 0 16.666667%;max-width:16.666667%}.col-md-10{flex:0 0 83.333333%;max-width:83.333333%}}@media (min-width:992px){.row-cols-lg-3>*{flex:0 0 33.333333%;max-width:33.333333%}.col-lg-8{flex:0 0 66.666667%;max-width:66.666667%}}.d-flex{display:flex!important}.align-items-center{align-items:center!important}.mx-auto{margin-right:auto!important;margin-left:auto!important}body{background-color:#111}a{color:#069;text-decoration:none}a:active,a:focus,a:hover{text-decoration:underline}h1{font-size:3.2rem;line-height:1.2em}h2{font-size:2rem}h3{color:#555;font-size:1.2rem;margin-bottom:0}.btn-download{color:#fff;display:inline-block;font-size:1.5em;padding:.6em 1em;position:relative;text-decoration:none;text-shadow:0 -1px 0 rgba(0,0,0,.5);vertical-align:middle;border-radius:4px;background-color:#d9750b;background-image:linear-gradient(#f90 10%,#e76a00 100%);box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 1px 3px rgba(0,0,0,.2);border:1px solid #995309}.btn-download:active,.btn-download:focus,.btn-download:hover{text-decoration:none;background-color:#e0811b;background-image:linear-gradient(#f0a100 10%,#f70 100%)}.btn-download:active{background-color:#cf6a00;box-shadow:0 2px 3px 0 rgba(0,0,0,.2) inset}nav{padding-top:50px}.site-logo{color:#fff;float:left;font-size:1.5rem;font-weight:700;text-decoration:none;text-shadow:2px 2px 0 #000;text-transform:uppercase}.star{color:#e08524}footer a{color:#ffa000}footer{font-size:.9rem;padding:2em;margin-bottom:25px;margin-top:25px}.site-nav{float:right;list-style-type:none;margin-top:7px;padding:0}.aside a{margin:5px}.aside img{margin-right:5px}.site-nav a{color:#ffa000;display:block;text-decoration:none;text-transform:uppercase}.site-nav a:active,.site-nav a:focus,.site-nav a:hover{color:#fff}header{margin-bottom:85px;margin-top:85px}header p{color:#ddd;font-size:1.25rem;margin:25px}.changelog{color:#999;display:block;margin-top:10px}.section-features h3{color:#111;margin:8px}.section-features p{padding:0 15px 6px}.section-features .col{margin-bottom:25px;margin-top:15px}.section-features img{margin-bottom:9px}main{background-color:#eee;color:#222}section{padding:35px 0 55px}.aside{background-color:#ccc;padding:25px 0;border-top:1px solid #bbb}.section-who-uses{color:#222;border-top:1px solid #bbb;background-color:#ddd}.section-who-uses .col{margin-bottom:9px;margin-top:9px}.section-who-uses img{text-align:center;max-width:90%;vertical-align:middle;max-height:40px;display:flex;align-items:center;margin-left:auto;margin-right:auto;padding:6px}.inline-block-list li{display:inline-block;margin-left:12px}.inline-block-list li:first-child{margin-left:0}@media only screen and (max-width:768px){html{font-size:calc(.8rem + .5vw)!important}h1{font-size:calc(1.4rem + 1.5vw)!important}h2{font-size:calc(1.2rem + 1vw)!important}.site-logo,.site-nav{float:none!important}.site-nav li{margin:0 .5em}header{margin-top:40px!important}header p{font-size:calc(1rem + .3vw)!important}section{padding:25px 0!important}.inline-block-list li{display:block;margin:0 auto 1.5em}.inline-block-list li:last-child{margin-right:1.5em}}@media only screen and (max-width:575px){.site-logo{float:none!important}header{margin-top:30px}.site-nav{text-align:center;float:none;display:block}.section-who-uses img{padding-left:15px;padding-right:15px}.aside .inline-block-list li{display:block;margin-top:15px;margin-bottom:15px}}</style>
+</head>
+<body>
+<div style="text-align: left;"><a href="../index.html">&lt;---&nbsp;&nbsp;
+return to all articles</a><br>
+</div>
+<h1><span style="color: rgb(0, 102, 0);">Messenger Structures</span><br>
+</h1>
+<div style="text-align: left;"><span style="text-decoration: underline;"></span><a
+href="https://hive.blog/tech/@natebowie/3-structures-of-private-messengers-how-they-work-and-their-pros-cons"
+target="_blank"><span style="text-decoration: underline;">Read on
+Hive.Blog</span></a><br>
+<br>
+Today I thought I would talk about messengers, specifically, the
+different types of messengers and how they work. The goal here is to
+help give an understanding of various privacy and security focused
+messengers, but in order to make the right choice on which one you need
+to understand how they work and the differences under the hood. I guess
+I bring this up because often times in the privacy community you hear
+about metadata and a few other aspects like registration requirements,
+and then are given recommendations based on that. I don’t mean to throw
+shade or anything, and understanding that stuff is important in picking
+a private messaging platform, but personally I think it is vital to
+understand how any given messenger works before you choose one.<br>
+<br>
+There are effectively three types of messengers in the wild:
+centralized messengers, federated &amp; self hosted messengers, as well
+as peer to peer messengers. Sure, things have a habit of not fitting
+into neat little categories, but I hope I’ll be able to lay them out in
+an understandable way. Also, this is completely focused on the niche of
+private messengers, so for all these examples assume that end to end
+encryption is active.<br>
+<br>
+With that, before I break down the different types of messengers, lets
+quickly go over how a message is sent. The structure obviously changes
+across messenger structures, however, the concept is still the same.
+The message starts on the sending device, which is typed up and then
+encrypted so nobody can read it except the intended recipient. Lets say
+we sent it from one phone to another, the message is encrypted on that
+phone, sent through one or more servers, received by the intended
+recipient, and then de-crypted by the recipient on their phone or other
+device they are using. Now, I know you might be thinking, “but wait,
+peer to peer messengers don’t go through servers,” and while it’s true
+they don’t go through messenger servers they do go through the internet
+which is made up of servers and switches that send that encrypted
+message in packets, so there is still devices to consider.<br>
+<br>
+With this understood, picking a messenger structure really comes down
+to the following questions:<br>
+<br>
+&nbsp;&nbsp;&nbsp; Does my messenger require identifying information to
+setup?<br>
+&nbsp;&nbsp;&nbsp; How much metadata is created, and how much of it is
+stored?<br>
+&nbsp;&nbsp;&nbsp; How easy can the messenger be taken offline?<br>
+&nbsp;&nbsp;&nbsp; Can the messenger intercept my data if it was
+compromised or malicious?<br>
+&nbsp;&nbsp;&nbsp; Do I want to self host my messenger, or, would I
+prefer a trusted third party unaffiliated with the messenger hosted my
+data?<br>
+&nbsp;&nbsp;&nbsp; Is my IP hidden from the messenger host and/or from
+the person I’m messaging?<br>
+&nbsp;&nbsp;&nbsp; Can my device be online 24/7, or, can I wait for
+messages to be delivered?<br>
+&nbsp;&nbsp;&nbsp; How much data do I want to be in control of?<br>
+<br>
+<span style="font-weight: bold;">Centralized Messengers</span><br>
+Alright, now we can start getting into the three types of messengers,
+starting with centralized messengers. These function when you register
+with a centralized service which handles the distribution of messages.
+In this case, the message would be encrypted on your device so only
+your recipient can read the message, the message would then be sent
+from your device through an ISP to the messenger host, which accepts
+the incoming message. The messenger then holds on to the encrypted
+message, but cannot read it, until it sees the recipient is online
+where it send it through the recipient’s ISP to their device before
+their device (and only their device) de-crypts it and reads the message.<br>
+<br>
+A good example of this centralized messengers is Signal, which I’ll use
+to demonstrate it’s pro’s and cons. First, like in Signal’s case, it’s
+really easy to set up an account. You don’t need to try to host
+anything or have a process on your device running 24/7, you just
+register and Signal handle’s all the legwork in the background. It also
+will hold any messages you send, and will deliver them the second the
+recipient is online. With a server routing the messages the IP address
+of the message sender is also not revealed to the receiver of the
+message.<br>
+<br>
+However, there are also some drawbacks with centralized messengers.
+First off, when you register they usually require identifying
+information, such as a phone number or email. Similarly, centralized
+messengers by their nature get all of your metadata. Whether they store
+it or not, because of their structure they get data such as when
+messages come in, their size, times the user was online, and which IP
+they connected with. Now, because centralized messengers have such a
+weak point this is often a focus of their goals to store as little of
+this information as possible, again using Signal as the example, they
+seem to do well with it; but it’s inherent in their structure so it’s
+still a risk since you are trusting all of your data to the people who
+run the messenger.<br>
+<br>
+Last, a centralized messenger is likely the easiest to compromise or
+shut down. Even though a messenger is end to end encrypted, if the
+messenger was compromised or malicious even though the data is
+encrypted you could really be sending them to be unencrypted by the
+server, which then re-encrypts the and sends it to the recipient (known
+as a man in the middle attack). With that said, using Signal as an
+example, though I haven't reviewed Signal’s code I doubt it would be
+easy for Signal to be compromised by a man in the middle attack; but
+it’s technically possible and may be more likely depending on the
+centralized messenger of your choosing. Regardless, however, it’s still
+the easiest form of messenger to block/attack, as Iran did with Signal
+not that long ago since it’s one centralized group they had to block
+instead of a loose and ever changing group of devices.<br>
+<br>
+<span style="font-weight: bold;">Self Hosted Messengers</span><br
+style="font-weight: bold;">
+Next, let’s talk about federated and self hosted messengers. Now, I
+don’t mean to be confusing, since some messengers can fall into one
+category but not the other, but lets break this down as well. Network
+wise, these messengers work exactly the same as a centralized
+messenger, data travels from a device to a server or group of servers,
+which then route the message to the intended recipient. In this case,
+however, the server is not operated by the messenger developers but
+instead you or a third party.<br>
+<br>
+Being self hosted or hosted by a third party is true of both self
+hosted and federated messengers, however, being federated means that it
+can communicate with other unaffiliated servers. This operates just
+like email in where anybody can get a domain and a server, then can
+send a message to anybody else who is using the same platform
+regardless of whether they are on the same server or not. For example,
+I could set up messanger1.com with Matrix and then register the account
+member@messanger1.com. Then, somebody else could set up a server at
+messanger2.com and the account on it member@messanger2.com and despite
+the servers being hosted by different people the accounts on the
+different servers could message each other or join the same groups.<br>
+<br>
+So, what are the pros and cons of using a self hosted federated
+messenger. More often than not, if you’re going to go through the
+trouble, (in my opinion) federated self hosted messengers would likely
+be the right choice because it’s nice to be able to talk people outside
+of those to others you’ve invited to your server – but if you do end up
+hosting a non-federated messenger then just disregard the applicable
+federated pros/cons.<br>
+<br>
+Firstly, the biggest benefit of self hosting systems is the fact that
+you are in control of your data, or presumably, you have delegated
+control to somebody who is trusted. In either case, you don’t need to
+worry about what some unknown group is doing with your data. Similarly,
+while it likely won’t prevent the government from giving a subpoena to
+your ISP, hosting provider, and/or domain registrar – or from somebody
+who has hacked into the server or those services from obtaining such
+info, there would be no requirements to hand your personal details over
+to other users of the service such as a phone number or email address.<br>
+<br>
+Additionally, unlike centralized messengers, anything self hosted (be
+it federated or not) is really hard to block or attack on a mass scale.
+Sure, it’s easy to block one company and shut down everything, but it’s
+really hard to find everybody who’s hosting a small server for their
+family and get them to stop – even if that small server can communicate
+with any other small and large servers on the network.<br>
+<br>
+Last, similar to centralized messengers, the server does all the heavy
+lifting. Once a server is set up all that you would need to do is
+download an app, sign in, and use the messenger. If the intended
+recipient isn’t online it will store the encrypted messenge and pass it
+along once they’re online. Having such a setup where the server handles
+the routing of messengers also prevents the IP address of the senders
+device from being revealed to the receivers device.<br>
+<br>
+There are, however, some drawbacks to this sort of messenger structure
+as well – the first of which is cost and time. In the case of self
+hosting, you will likely need a domain, and definitely will need to
+either set up a home server and get a static IP or pay for a VPS.<br>
+<br>
+The other main drawback to these messengers is metadata. Centralized
+messengers often focus really hard on minimizing metadata, such as the
+date of a message, size of a message, and who it’s going to; however,
+the self hosted messenger projects often focus less on that. The
+expectation is that if you’re self hosting then you’re the only one
+with access to it, but that’s not always the case and one of the
+biggest complaints about the federated messenger platform Matrix.
+First, if you’re relying on a host that you are not providing and that
+you don’t personally know the provider (say through Matrix.org) then
+you can only trust them as much as you can trust any other centralized
+provider, except there’s more metadata being stored. Similarly, if you
+regularly message people on other servers, even if you run your own
+server, the other server receiving messages from accounts on your
+server is also getting the same metadata – while the other server is
+presumably not in your control. While the message itself is still end
+to end encrypted, and the dangers of metadata against your privacy are
+largely dependent on the situation you are in, at the end of the day
+more data you in other people’s hands you don’t necessarily trust is a
+risk to privacy.<br>
+<br style="font-weight: bold;">
+<span style="font-weight: bold;">P2P Messengers</span><br>
+Last, there are peer to peer messengers. Unlike in centralized, self
+hosted, or federated messenger, there are no servers involved in peer
+to peer messengers. In this case the device which intends to send a
+message looks to see if it can locate the device that is receiving the
+message (usually through DHT), and then, if the recipient device is
+online then it is sent strait to it without any servers involved aside
+from ISPs.<br>
+<br>
+Like with the other messenger structures, let’s start the pros and cons
+with the benefits. First, there are no worries about metadata (aside
+from general ISP logging). Since there’s no centralized server to route
+messages, the sender and the receiver are the only ones to hold such
+data, so as long as you trust the other person you’re messaging then
+there’s no metadata being put in third party hands while also not
+having to set up and operate any sort of server.<br>
+<br>
+Next, there’s no need to worry about registering with identifying
+details like a name, email, or phone. Since it’s decentralized it will
+pretty much be guaranteed to require nothing but a private/public
+key-pair generated on the device with no identifying information
+whatsoever.<br>
+<br>
+Last, it’s extremely hard to block or otherwise shut down peer to peer
+messaging services. Not only are there no one group of centralized
+servers, but there’s not even home servers or the like, it’s just a
+bunch of random devices communicating with each other.<br>
+<br>
+There are, however, drawbacks to such a messenger structure. First, and
+likely the largest, is the fact that any messages sent cannot go
+through unless both the sender and receiver have an internet connection
+at the same time. Secondly, since there are no central servers routing
+messages, the IP address of the sender is known by the receiver and
+vice versa. IP addresses can be hidden by routing data through Tor like
+the messenger Briar does; however, routing through Tor makes the
+messenger easier to block and also prevents audio/video calls.<br>
+<br>
+Last, because peer to peer messengers generally rely on DHT and
+private/public key-pairs there’s no easy usernames. In this case, with
+math and DHT, you would get your long username of random numbers and
+letters and share it through a QR code or by copy pasting, then
+somebody else would import it into their contacts and set it’s name.
+Once the name is added to contacts it then becomes super easy to use,
+but it’s still more complicated to get set up then a simple username or
+email.<br>
+<br>
+<span style="font-weight: bold; font-style: italic;">Quick Tangent</span><br
+style="font-style: italic;">
+<span style="font-style: italic;">If you want to direct information to
+a device, you need some way identify it, and then translate that
+identification to it’s IP address. This, however, requires devices to
+agree on one method of identification. Generally speaking, it can be
+done in three different ways:</span><br style="font-style: italic;">
+<br style="font-style: italic;">
+<span style="font-style: italic;">* You can delegate human memorable
+identifies to a centralized service, just like ICANN who has ultimate
+authority on which standard domain names point where. People then rent
+domains according to the rules put fourth by that centralized service.</span><br
+style="font-style: italic;">
+<br style="font-style: italic;">
+<span style="font-style: italic;">* You can delegate human memorable
+identifies to a decentralized service like a blockchain, such as crypto
+based domain names. In that event, you would use crypto to purchase an
+unclaimed domain and update the decentralized ledger with location you
+want it to point to.</span><br style="font-style: italic;">
+<br style="font-style: italic;">
+<span style="font-style: italic;">* You can use math to generate
+private and public keys, and then share those public key (or the hashes
+of those) to a distributed table like Tor or I2P domain names. Those
+keys can be generated by anybody anytime for free, but are long and not
+human memorable.</span><br style="font-style: italic;">
+<br style="font-style: italic;">
+<span style="font-style: italic;">P2P messengers generally use the
+third for functionality, but those identities must copied and pasted or
+shared with something like a QR code.</span><br>
+<br style="font-weight: bold;">
+<span style="font-weight: bold;">Summary</span><br>
+Well, that’s all in regards to talking about messenger structures. The
+different structures of various messengers, as well as the different
+ways you can use them, make them almost impossible to compare unless
+you look at your specific needs. Now, hopefully when looking at your
+messenger options you can understand how it will work and make the
+right choice including structure in the qualities you compare it on. I
+wrote this to help you understand what your options are and make your
+own decisions, and this is where you can close this tab now if you
+want. That said, I felt it wouldn’t be complete if I didn’t quickly go
+over what I would personally choose for messengers in a handful of
+situations.<br>
+<br>
+<span style="font-weight: bold;">My personal messenger highlights </span>(as
+of 2/4/23)<span style="font-weight: bold;">:</span><br>
+<br>
+* If you want a messenger that is super easy to use and share, Signal
+may be a great choice.<br>
+<br>
+* If you want a centralized style (*see notes) messenger that does not
+require any identifying information, Session may be a great choice.<br>
+<br>
+* If you want to self host, and be able to join groups or message
+anybody who is on the same platform, Matrix may be a great choice.<br>
+<br>
+* If you want a lightweight self hosted messenger to message people
+only on your server – or federated with a small list of handpicked
+servers, XMPP may be a great choice.<br>
+<br>
+* If you want a P2P messenger that allows voice/video calls, or Tor is
+at risk of being blocked, then Tox may be a great choice.<br>
+<br>
+* If you want a P2P messenger that hides your IP via Tor, or want to
+message through Bluetooth or LAN in addition to through the internet,
+then Briar may be a good choice.<br>
+<br>
+<span style="font-style: italic; font-weight: bold;">*Note on Session</span><br
+style="font-style: italic;">
+<span style="font-style: italic;">Session is not exactly a centralized
+messenger. Session is run on the decentralized Oxen network, formerly
+known as the Loki network. The Oxen network anonymizes your IP through
+onion routing and then locates your device like a peer to peer
+messenger would. However, the Oxen network will hold onto the message
+on behalf of the sender until the recipient comes online – so even
+though it’s structure is probably closer to a peer to peer messenger
+then a centralized messenger, it operates from the users perspective
+like a centralize messenger.</span><br>
+<br>
+<br>
+<span style="color: rgb(0, 102, 0);">All content in /tutorials is
+licensed </span><span
+style="font-style: italic; color: rgb(0, 102, 0);">Creative Commons
+Attribution-Share Alike</span><span style="color: rgb(0, 102, 0);">
+unless otherwise specified. Feel free to share it around and re-use it,
+but please give me credit if you do so (and would love if you sent me a
+message or something). You can also<span style="color: rgb(0, 0, 153);">
+</span></span><a
+style="color: rgb(0, 0, 153); text-decoration: underline;"
+href="https://nathankmbowie.com/tips.html">send me a tip</a><span
+style="color: rgb(0, 102, 0);"> if you found this helpful, but no
+pressure - this is a hobby.</span><br>
+<br>
+Contact Me:<br>
+Mastodon @natebowie@mastodon.social<br>
+Twitter @NathanBowie6<br>
+</div>
+<br>
+<br>
+</body>
+</html>
+
