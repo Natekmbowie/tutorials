@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>10Yrs on Linux</title>
+
+  
+  
+  <style>/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html{-webkit-text-size-adjust:100%;color:#222;font-size:1em;line-height:1.4}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}strong{font-weight:bolder}small{font-size:80%}img{border-style:none;vertical-align:middle}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}.clearfix::after,.clearfix::before{content:"";display:table}.clearfix::after{clear:both}@media print{*,::after,::before{background:#fff!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]::after{content:" (" attr(href) ")"}img{page-break-inside:avoid}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
+/*!
+* Site Partially Based on / Inspired By Bootstrap Grid v4.6.2 (https://getbootstrap.com/). Thank you Developers!
+*/
+html{box-sizing:border-box;-ms-overflow-style:scrollbar;color:#fff;font-size:1rem;font-family:"Open Sans",sans-serif;text-align:center}*,::after,::before{box-sizing:inherit}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col,.col-12,.col-lg-8,.col-md-10,.col-sm-11{position:relative;width:100%;padding-right:15px;padding-left:15px}.col{flex-basis:0;flex-grow:1;max-width:100%}.row-cols-1>*{flex:0 0 100%;max-width:100%}.row-cols-2>*{flex:0 0 50%;max-width:50%}.col-12{flex:0 0 100%;max-width:100%}@media (min-width:576px){.row-cols-sm-2>*{flex:0 0 50%;max-width:50%}.row-cols-sm-3>*{flex:0 0 33.333333%;max-width:33.333333%}.col-sm-11{flex:0 0 91.666667%;max-width:91.666667%}}@media (min-width:768px){.row-cols-md-6>*{flex:0 0 16.666667%;max-width:16.666667%}.col-md-10{flex:0 0 83.333333%;max-width:83.333333%}}@media (min-width:992px){.row-cols-lg-3>*{flex:0 0 33.333333%;max-width:33.333333%}.col-lg-8{flex:0 0 66.666667%;max-width:66.666667%}}.d-flex{display:flex!important}.align-items-center{align-items:center!important}.mx-auto{margin-right:auto!important;margin-left:auto!important}body{background-color:#111}a{color:#069;text-decoration:none}a:active,a:focus,a:hover{text-decoration:underline}h1{font-size:3.2rem;line-height:1.2em}h2{font-size:2rem}h3{color:#555;font-size:1.2rem;margin-bottom:0}.btn-download{color:#fff;display:inline-block;font-size:1.5em;padding:.6em 1em;position:relative;text-decoration:none;text-shadow:0 -1px 0 rgba(0,0,0,.5);vertical-align:middle;border-radius:4px;background-color:#d9750b;background-image:linear-gradient(#f90 10%,#e76a00 100%);box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 1px 3px rgba(0,0,0,.2);border:1px solid #995309}.btn-download:active,.btn-download:focus,.btn-download:hover{text-decoration:none;background-color:#e0811b;background-image:linear-gradient(#f0a100 10%,#f70 100%)}.btn-download:active{background-color:#cf6a00;box-shadow:0 2px 3px 0 rgba(0,0,0,.2) inset}nav{padding-top:50px}.site-logo{color:#fff;float:left;font-size:1.5rem;font-weight:700;text-decoration:none;text-shadow:2px 2px 0 #000;text-transform:uppercase}.star{color:#e08524}footer a{color:#ffa000}footer{font-size:.9rem;padding:2em;margin-bottom:25px;margin-top:25px}.site-nav{float:right;list-style-type:none;margin-top:7px;padding:0}.aside a{margin:5px}.aside img{margin-right:5px}.site-nav a{color:#ffa000;display:block;text-decoration:none;text-transform:uppercase}.site-nav a:active,.site-nav a:focus,.site-nav a:hover{color:#fff}header{margin-bottom:85px;margin-top:85px}header p{color:#ddd;font-size:1.25rem;margin:25px}.changelog{color:#999;display:block;margin-top:10px}.section-features h3{color:#111;margin:8px}.section-features p{padding:0 15px 6px}.section-features .col{margin-bottom:25px;margin-top:15px}.section-features img{margin-bottom:9px}main{background-color:#eee;color:#222}section{padding:35px 0 55px}.aside{background-color:#ccc;padding:25px 0;border-top:1px solid #bbb}.section-who-uses{color:#222;border-top:1px solid #bbb;background-color:#ddd}.section-who-uses .col{margin-bottom:9px;margin-top:9px}.section-who-uses img{text-align:center;max-width:90%;vertical-align:middle;max-height:40px;display:flex;align-items:center;margin-left:auto;margin-right:auto;padding:6px}.inline-block-list li{display:inline-block;margin-left:12px}.inline-block-list li:first-child{margin-left:0}@media only screen and (max-width:768px){html{font-size:calc(.8rem + .5vw)!important}h1{font-size:calc(1.4rem + 1.5vw)!important}h2{font-size:calc(1.2rem + 1vw)!important}.site-logo,.site-nav{float:none!important}.site-nav li{margin:0 .5em}header{margin-top:40px!important}header p{font-size:calc(1rem + .3vw)!important}section{padding:25px 0!important}.inline-block-list li{display:block;margin:0 auto 1.5em}.inline-block-list li:last-child{margin-right:1.5em}}@media only screen and (max-width:575px){.site-logo{float:none!important}header{margin-top:30px}.site-nav{text-align:center;float:none;display:block}.section-who-uses img{padding-left:15px;padding-right:15px}.aside .inline-block-list li{display:block;margin-top:15px;margin-bottom:15px}}</style>
+</head><body>
+<div style="text-align: left;"><a href="../index.html">&lt;---&nbsp;&nbsp;
+return to articles archive</a><a href="../../blog.html"><br>
+&lt;---&nbsp;&nbsp; return to my blog</a><br>
+<br>
+</div>
+
+<h1><span style="color: rgb(0, 102, 0);">10 Years on Linux</span><br>
+</h1>
+
+<div style="text-align: left;"><span style="text-decoration: underline;"></span><span style="text-decoration: underline;"></span><br>
+<br>
+A little over a decade ago Windows 8 was entirely unusable for me. I&#8217;m
+not referring to the mobile-style UI and bloat that marked a change in
+Windows, but I mean unusable in the none dramatic sense of the word:
+i.e. I couldn&#8217;t get more than a day or two before my installation would
+brick itself. After many, many reinstalls and figuring out it was a
+particular update to blame, I went about trying to apply the band-aid
+approach that would at least give me more than a few hours worth of
+usage per OS installation before my computer bricked: which was trying
+to disable updates. I belt and suspenders approached it, both deferring
+updates in settings and set the WiFi network the device was connected
+to as a metered internet connection (or whatever the terminology was,
+it&#8217;s been a decade so I might have misremembered those terms).<br>
+<br>
+Even if it was far from ideal, I was elated &#8211; my teenage self was a
+computer wiz that found a temporary fix rendering my computer useful
+again until a long-term fix was found. That sense of accomplishment
+quickly dissipated though, as shortly after when starting my computer I
+was greeted by an installing updates screen, followed by my computer
+bricking itself yet again. Despite disabling updates in two different
+ways, Microsoft came in and decided that my preferences didn&#8217;t apply
+because they deemed whatever update too important for some lowly
+peasant such as myself to refuse. After a lot of searching, I finally
+figured out how to truly remedy the problem by disabling the Windows
+update service altogether, but immediately decided I needed to find
+another solution &#8211; which brought me to the topic of this post: Linux.<br>
+<br>
+From then on I had the pretty stereotypical Linux journey: i.e.
+installing Ubuntu and leveraging its ease of use and beginner
+friendliness, then a few months later pivoting to something that didn&#8217;t
+give me Amazon search results on my desktop. Sometime later Windows 8.1
+came out, and while still Windows, at least was functional; and
+combined with my need for Windows specific software for school I
+stopped using Linux exclusively. While games and software for school,
+then college (Uni for you sophisticated Europeans), then work required
+Windows (often that I couldn&#8217;t get to work in Wine) I&#8217;ve gotten by
+using combinations of duel booting and VMs, never willing to switch
+back to Windows full time.<br>
+<br>
+Today, in this post, I would like to go over why I use Linux, what I
+use, and some potential plans for future usage. I don&#8217;t have any
+particular goal to convince you of anything, nor do I guarantee this
+post will be perfectly cohesive and linear, but I want to chronicle my
+journey here and speak about what I use and why.<br>
+<br>
+&nbsp;<br>
+<h2>Part II: Why</h2>
+Okay, so I went over why I initially gave Linux a go, but now that
+Windows is usable I wanted to go over why I still go out of my way to
+Linux it as opposed to something like Windows. I wanted to give it a
+fair bit of thought here, and really analyze it. To start I&#8217;ll list
+some things that aren&#8217;t truly why I&#8217;m going out of my way to run Linux.<br>
+<br>
+&nbsp;<br>
+First, I&#8217;m not on Linux because it&#8217;s more secure. Sure, much more
+malware is made for Windows desktops than Linux desktops, so you&#8217;re
+more likely to stumble upon malware for Windows; however, Windows also
+takes that into account and runs AV in the background all the time. AV
+does a good job at detecting old malware, so stumbling into old
+existing malware isn&#8217;t as huge of a risk as one might consider it. It&#8217;s
+the newly written malware by people who at least sort of know what they
+are doing that is the risk, stuff that won&#8217;t be detected by AV, and is
+well placed and/or targeted towards me. This could be generic
+targeting, such as malicious software in Google Adwords going after
+specific operating systems or keywords related to them, or a particular
+attack against me specifically. In either of those cases, both
+antivirus and security through obscurity would not provide me with much
+in terms of tangible benefits. Further, there are also plenty of cross
+platform programming languages (e.g. Java) that can effect any
+operating system in a similar way. For these reasons safety from
+malware comes down to user behavior, and I would not consider myself
+secure from malware on Linux.<br>
+<br>
+&nbsp;<br>
+Next, Linux isn&#8217;t necessarily more stable than Windows either. Now,
+sure, I got into Linux because Windows 8 was unstable to the point of
+being unusable, but that&#8217;s sort of an exception. I might expect Debian
+(and some of its forks) to be more stable than Windows, and a Linux
+server is expected to be more stable than a Windows server (which is
+why Microsoft uses Linux servers), but that&#8217;s not always the case. For
+me running Debian I do expect it to be a tad more stable than Windows
+10, but after some thought, this isn&#8217;t a deciding factor, and depending
+on the distro in use Windows could actually end up being way more
+stable than Linux.<br>
+&nbsp;<br>
+Further, I&#8217;m not on Linux because it&#8217;s a modern, efficient operating
+system built from the ground up. Sure, Windows might be legacy code,
+built on legacy code, with a sleek-looking modern bit of code on top.
+To quote Bill Gates: &#8220;if you can&#8217;t make it work good, make it look
+good.&#8221; In most FOSS (free and open source software) projects, as
+opposed to proprietary software, you&#8217;ll find less code doing more work;
+making it less bloated and more functional. While I am stepping a bit
+out of my depth; Linux, however, isn&#8217;t free of this legacy code or
+inefficiencies either. From the &#8216;everything is a file&#8217; Unix philosophy,
+to some desktop environments still being built to act as if they&#8217;re
+connecting to a remote display server, there&#8217;s plenty of legacy code to
+go around in Linux as well.<br>
+<br>
+&nbsp;<br>
+So, if I just listed off reasons that weren&#8217;t quite deciding factors,
+then what are the reasons? Well, I have a few, but they pretty much
+boil down to control and licensing. To break them down further, first,
+there&#8217;s the lack of bloat. Sure, occasionally distros ship with what
+some (including myself) would consider bloat &#8211; I&#8217;m looking at you
+Canonical; but there&#8217;s no such thing on Linux as being unable to
+uninstall a manufacturer installed application. Most distros only ship
+with some basic utilities which can be removed at will, and then it&#8217;s
+up to the user to add or remove whatever they see fit. This is not to
+mention there&#8217;s also a lack of a million Microsoft features,
+components, and services filling up your hard drive unnecessarily and
+taking up processing resources.<br>
+<br>
+&nbsp;<br>
+Speaking of adding or removing anything you see fit, the next aspect is
+the control over your own operating system aspect of Linux. As I
+mentioned, you can add or remove components at will, but this goes well
+beyond what somebody unfamiliar with Linux might think this includes.
+Even basic system components like your desktop environment can be
+replaced, giving you way more options than on other systems.
+Touchscreens are popular now, so plenty of desktops need to cater to
+those, but what if you don&#8217;t want that? Well, if you&#8217;re on Windows
+you&#8217;re out of luck, but on Linux you&#8217;re a few words in the terminal
+away from changing that. Of course you can pick and choose way more
+components than your desktop, but it&#8217;s a great example of something
+customizable.<br>
+<br>
+&nbsp;<br>
+However, this control goes well beyond just customization. Remember how
+when I deferred Windows updates, then set my WiFi to metered (which
+disables installing updates over it) and Windows still updated? Well,
+that doesn&#8217;t happen on Linux. When I tell my computer to do something,
+it does it, and I don&#8217;t have to worry about some company deciding they
+know better than I do and doing something anyway. Further, adjacent to
+control - and another big reason I&#8217;m on Linux, is privacy. Windows is
+full of telemetry, and I can never fully know or trust what information
+they&#8217;re collecting, but on Linux when I disable telemetry (if even
+applicable) I can trust it&#8217;s not collecting info.<br>
+<br>
+&nbsp;<br>
+Yet another reason why I&#8217;m on Linux is its efficiency. I&#8217;ve heard
+people say &#8220;Linux is free unless you value your time,&#8221; but I feel it&#8217;s
+actually quite the opposite. Of course it does take time to familiarize
+yourself with the system, but in my usage Linux has certainly saved me
+time in the long run. The biggest one is of course the terminal, which
+while looking scary at first, can accomplish tasks by typing three or
+four words instead of a minute or so of navigating GUIs on Windows.
+Similarly, homemade scripts that took me three minutes to write can
+save me probably ~15-30 seconds each time I run them (e.g. opening
+Firefox in a separate profile for homemade web apps, without requiring
+Firefox to always prompt me to choose a profile at launch or to switch
+profiles while running). The efficiency at which you can operate Linux
+once you&#8217;ve learned it can make a huge difference once you start
+thinking of each little bit of time you&#8217;ve saved each day.<br>
+<br>
+&nbsp;<br>
+Last, there&#8217;s the ideological component as well. And yeah, I know that
+ideologies and the internet don&#8217;t go hand and hand all too well (or
+really well, depending on what you consider well), but this one&#8217;s
+luckily not too controversial. Basically, the ideology here is that
+everybody should be able to access the software freely, review its
+code, and do with it what they please with their systems running said
+code answering to them and not some developer or company. Call it
+communism or call it libertarianism, regardless, it&#8217;s something I feel
+strongly about and a driving factor in why I&#8217;m writing this on Linux.<br>
+<br>
+<h2>Part III: What I use</h2>
+Now, as much as I joked about ideology being the controversial part of
+this post, here&#8217;s the real controversial part: my favorite setup, and
+how everybody who does something slightly different is entirely wrong.
+At a certain point I came to an understanding about how distros and
+forks worked, and realized Ubuntu was just Debian + pissware; so I
+migrated over to Debian and have continued to use it since. Maybe deep
+down I&#8217;m still traumatized by Windows 8, but stability is a high
+priority for me and it&#8217;s worked well. I have experimented with
+Slackware, Arch, and everything in between; but if you exclude Gallium
+which ran for a bit on my Chromebook the only bare metal installation
+I&#8217;ve had in the last eight or so years has been Debian.<br>
+<br>
+The biggest complaint about Debian people often have is that software
+can get outdated in terms of features on a stable release, but for me
+it hasn&#8217;t really been an issue. Browser updates and security updates
+come through, so there&#8217;s no fear there, and most of the time for me it
+doesn&#8217;t matter if the version of a tool installed via the native
+repository has lagging feature updates or not (e.g. I&#8217;ve been using
+Libre Office forever now, and at no point have I really noticed any
+changes that I couldn&#8217;t have lived without). Even in the event that you
+really need features not in the repo yet, however, Appimages, Flatpaks,
+and Snaps can fix that.<br>
+<br>
+As a recent example, Prism Launcher (a FOSS 3rd party Minecraft
+launcher) doesn&#8217;t come with the latest version of Java bundled as the
+official Minecraft launcher does, and the then latest version of Java
+wasn&#8217;t added in the Bullseye repo so it couldn&#8217;t be installed natively&#8230;
+except I was already intending to install it as a Flatpak (which auto
+installs the Java dependency as a Flatpak). The only reason I even
+realized it could have been a potential issue is because it was pointed
+out on the installation page. In general, with the exception of desktop
+environments (and I use XFCE which never changes), it&#8217;s super easy to
+get all the latest and greatest when desired while also getting the
+stability not possible else ware. Otherwise, in the super rare
+circumstances where I need something newer like while compiling an app
+image I can just spin up an Arch VM.<br>
+<br>
+The other major issue would be hardware compatibility &#8211; which of course
+can&#8217;t be resolved with Flatpaks. Since the Linux Kernel in Debian lags
+behind other distros you can&#8217;t run Debian on the first day of release
+for the latest hardware. At least for me anyway, that&#8217;s not usually an
+issue. Heck, my laptop is seven years old, and my other computer is a
+used Chromebook I picked up a couple of years ago that was released 8
+years ago.<br>
+<br>
+<span style="font-weight: bold;">The Big Distros I don&#8217;t Use</span><br>
+And I get it, as hard as it is to believe, some people make the wrong
+choice and do different things than I do. Lol, but seriously, there are
+a few other options as well. I&#8217;ve heard some people say that Fedora is
+a great mix between Debian and a rolling release like Arch; which I&#8217;ve
+toyed around with a bit and it seems to be good. Maybe not quite as
+much compiled for it or documented about it as Debian and Debian-based
+distros, but given Red Hat got Flatpaks going that kinda makes the
+former a moot criticism. I still prefer Debian for the reasons
+mentioned above, but I can understand why somebody might come to a
+different conclusion.<br>
+<br>
+There&#8217;s also Arch, likely the best and most popular rolling release.
+I&#8217;ve heard Arch described as a hobbyist&#8217;s distro, and I don&#8217;t think
+that&#8217;s the best way to put it. I&#8217;d describe it as a tinkerer&#8217;s distro
+since it mandates somebody has at least a cursory understanding of
+their system and enjoys maintaining it. Or, of course, they like to
+have the latest hardware from day one and like to tinker with those
+sorts of things and are stuck with the software side of maintenance.<br>
+<br>
+I do love to tinker on my computer, but not with my computer. I enjoy
+firing up a VM with something new on it or toying with some newish
+protocol or something to see how it all works. What I don&#8217;t like to do
+though is tinker in such a way that I risk breaking my computer. The
+last thing I want to do is be on or just getting off a twelve-hour
+shift of fixing a bunch of systems that aren&#8217;t doing what they&#8217;re
+supposed to do, only to find that some update had a manual intervention
+I didn&#8217;t read up on and end up bricking my computer, or end up with
+dependency requirements that mess up my software; or something similar
+to that.<br>
+<br>
+That said, you could presumably glean that if I&#8217;m on Debian over
+Fedora, then I&#8217;m certainly not looking for a rolling release. Though
+there is a bit of irony in how opposite releases can end up in the same
+place, and I could end up with almost the exact same software on Debian
+as someone running Arch. So first is the desktop, right? You can&#8217;t use
+that through a Flatpak so it has to be older on Debian, except one of
+the things I&#8217;ve heard is that stability wise it&#8217;s best to use XFCE or a
+tiling window manager on Arch that stays roughly the same since being
+on the cutting edge of something like GNOME or Plasma might end up
+breaking stuff &#8211; so our desktops could be the same in either distro.
+Oh, and from what I&#8217;ve heard if you install too many packages natively
+on Arch (especially through the AUR) you run the risk of dependency
+conflicts and the like, so some people might run a good portion of
+their software through self-contained packages like Flatpaks &#8211; which
+would be the same regardless of the distro.<br>
+<br>
+And the last thing is that, for stability, some Arch users use an LTS
+Kernal. At that point, if they did everything I just mentioned, sure
+Arch would be pretty stable; but at that point they constructed a
+stable release of Linux with extra steps. If not though, I guess each
+time someone on less stable releases bricks their system it&#8217;s one less
+bug to risk bricking mine. Ooh, and I just thought of a second funny
+jab. Everybody says Arch is the endgame of Linux, but the
+endgame-endgame is when you run out of hair to pull out after each time
+your system bricks and you switch to something more stable. Alright,
+I&#8217;ll stop bugging Arch users now, otherwise they&#8217;ll insult me using big
+words and technical terms I don&#8217;t know.<br>
+<br>
+<span style="font-weight: bold;">Forks and Other Distros</span><br>
+Further, beyond the three distros mentioned above there are plenty of
+other ones as well. There&#8217;s a few like Slackware that are unique and
+built from scratch, and a few like Puppy Linux which are based on other
+distros but heavily modified to fit a particular purpose. Otherwise,
+however, when it comes to personal desktop Linux distros most of them
+are forks of the aforementioned three (or forks of those forks) that
+don&#8217;t bring much to the table aside from a different default desktop
+environment and system utilities. In most cases I prefer going with the
+project that the fork was based on and installing any software or
+desktop environments that were sought out, and I would recommend
+anybody do the same. While installing the software manually might seem
+slightly more inconvenient, usually you&#8217;d be trading off slower
+adoption of security patches, potential instability, and more bloat for
+a few less sentences in the terminal.<br>
+<br>
+I would make an exception for something like Linux Mint (and maybe
+Pop-OS or the newer trendy distros that I&#8217;m not too familiar with),
+even if I wouldn&#8217;t use them myself. For somebody just trying out Linux,
+something like Mint comes pre-configured with a nice desktop, graphical
+software store, and proprietary driver options out of the box. While
+it&#8217;s only a few commands in Debian to get a similar setup (Mint is
+based on Ubuntu, which is based on Debian), for a new user who&#8217;s
+learning the system having everything setup in such a way brings a lot
+of value. <br>
+<br>
+<span style="font-weight: bold;">Desktop Environments</span><br>
+Last, beyond the distro, the next biggest choice in Linux would be the
+desktop environment (or tiling window manager if you want to go old
+school). As mentioned before, I&#8217;ve used XFCE for a while, and it&#8217;s
+definitely kind of a modernized XP feel (or any Windows versions before
+they got into the touchscreen market). I always remove the bottom bar
+with the shortcuts, then move the top bar to the bottom, and I think
+that&#8217;s what&#8217;s best for me. I can hit the Applications button then power
+off/sleep/hibernate/log off in two clicks, or hover over an application
+category and click on one in it. I got running applications to the
+right of that, and on the right-hand side of the task bar I have the
+time and other utilities, plus the option to switch between desktops
+for multitasking.<br>
+<br>
+Sure, something like GNOME seems nice and flashy, but overall it feels
+more like tablet or phone software. You got the power options on the
+top right, the shortcuts on the left sidebar, then a button to pull up
+all applications in a grid view and it just seems something not as
+efficient for a mouse. Though again, as much as I&#8217;ve been joking about
+there being only my choice or the wrong choice, it all really just
+comes down to personal preferences.<br>
+<br>
+<h2>Part IV: Future Plans, Schemes, and Other Mischievous Plots</h2>
+Finally, closing this post up, I wanted to talk about what I&#8217;m planning
+in the future here. As of the first draft of this post I&#8217;m currently
+duel booting Windows 10 and Debian, but that might change here soon.
+Unlike in the past while in school, when it comes to work I&#8217;ve got a
+separate company provided computer so there are no outside factors
+forcing me to use Windows for personal use. The only real thing keeping
+me on Windows alongside Linux until now has always been games. With
+that, if I think I might play some games I might as well be running
+Windows, and since I&#8217;m running Windows I might as well do other stuff
+while on it, and since I&#8217;m doing all this stuff here I need to allocate
+more space of my hard drive (or relegate a Linux install to external
+media for a bit when my hard drive dies and I pick up a 380 GB
+replacement), etc.<br>
+<br>
+A few months ago though I found out about Steam Proton, which if you&#8217;re
+unaware is Steam&#8217;s solution for running Windows games on Linux (similar
+to Wine). While it makes sense given I&#8217;ve been aware Steam OS and the
+Steam Deck are both Linux based and it wouldn&#8217;t make sense to buy a
+portable console only compatible with a fraction of the games on the
+market; I wasn&#8217;t aware of it and got a happy surprise to see it
+existed. I&#8217;ve got a few games I cycle in and out of playing and having
+successfully booted them all into Proton (minus Minecraft, which is
+Java-based and cross-platform) I can say that they all run well, and in
+the case of games for older versions of Windows like Fallout 3, works
+out of the box even when it won&#8217;t on Windows 10.<br>
+<br>
+I&#8217;m not a huge gamer, so as long as my favorites run I&#8217;m not too picky
+otherwise. I have no qualms with using a game streaming service or just
+not playing games that I can&#8217;t get to run through Proton, and maybe in
+the future if I buy a device powerful enough I might toy with
+pass-through virtualization if I really want to play something I
+otherwise can&#8217;t. Beyond that, I&#8217;ve pretty much migrated all of my
+functionality over, from ISO burning to MTP file transfers; the kind of
+things I&#8217;ve done out of habit on Windows but are only one alternative
+piece of software away from having the same functionality.<br>
+<br>
+It&#8217;s been probably a month or so since I booted up Windows except to
+migrate stuff over whenever I need something I can't just grab by
+mounting the main Windows partition. It&#8217;s taken me about a decade, but
+at some point soon I plan to overwrite the Windows partitions once and
+for all, possibly also upgrading to a larger SSD while I&#8217;m at it. It
+only took me a decade to do so, but hey, maybe I can tell myself it&#8217;s
+got some sort of significance being around the ten-year mark.<br>
+<br>
+I can&#8217;t say for certain that right after doing this I won&#8217;t run into an
+issue flashing a device or doing something else that requires very
+specific software; then find myself needing to spin up a temporary
+Windows installation again. Regardless, though, that&#8217;s future me&#8217;s
+problem. I hope you enjoyed this somewhat long read, even if it was
+kinda opinionated and all over the place.<br>
+<br>
+<a href="https://www.youtube.com/watch?v=9-IWMbJXoLM" target="_blank">"What
+UNIX Cost Us" - Benno Rice (LCA 2020)</a><br>
+Meme about Arch<br>
+Meme about XFCE<br>
+Meme about Information Here<br>
+<br>
+<span style="color: rgb(0, 102, 0);"></span><span style="color: rgb(0, 102, 0);"><br>
+Contact Me:<br>
+Mastodon @natebowie@mastodon.social<br>
+Twitter @NathanBowie6</span><br>
+<br>
+</div>
+
+<br>
+
+<br>
+
+</body></html>
